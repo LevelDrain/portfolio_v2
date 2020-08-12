@@ -11,7 +11,7 @@ background.endFill()
 pixiApp.stage.addChild(background)
 
 //アニメーション部分
-const totalCircle = 50, center = {x: pixiApp.renderer.screen.width / 2, y: pixiApp.renderer.screen.height}
+const totalCircle = 3, center = {x: pixiApp.renderer.screen.width / 2, y: pixiApp.renderer.screen.height}
 let circles = []
 while (circles.length < totalCircle) {
     let circle = new PIXI.Graphics()
