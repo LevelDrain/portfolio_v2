@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import * as pixiObj from '@/pixi/pixi'
+    import * as pixiObj from '@/assets/pixi/pixi'
 
     export default {
         name: "Bubble",

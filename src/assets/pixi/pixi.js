@@ -1,6 +1,6 @@
 import * as PIXI from 'pixi.js'
 
-const pixiApp = new PIXI.Application({width: 300, height: 300, transparent: true})
+const pixiApp = new PIXI.Application({width: window.innerWidth, height: window.innerHeight, transparent: true})
 
 //背景透過
 const backgroundAlpha = 0
@@ -14,19 +14,28 @@ pixiApp.stage.addChild(background)
 const totalCircle = 50, center = {x: pixiApp.renderer.screen.width / 2, y: pixiApp.renderer.screen.height}
 let circles = [], circle
 
+let bubbleTexture = new PIXI.Texture.from('../img/logo.png')
 while (circles.length < totalCircle) {
-    let circle = new PIXI.Graphics()
-    let scale = Math.random() * 10 + 1
-    circle.beginFill(0Xffffff)
-    circle.arc(0, 0, scale, 0, Math.PI * 2)
-    circle.alpha = Math.random()
-    circle.position = {x: center.x + Math.random() * 200 - 100, y: center.y}
-    circle.moveX = Math.random() * 6 - 3
-    circle.moveY = Math.random() * -15
-    circle.endFill()
+    let bubbleSprite = new PIXI.Sprite(bubbleTexture)
+    bubbleSprite.alpha = Math.random()
+    bubbleSprite.anchor.set(0.5)
+    bubbleSprite.x = center.x + Math.random() * 1000 - 500
+    bubbleSprite.x = center.y + Math.random() * 1000 - 500
+    circles.push(bubbleSprite)
+    pixiApp.stage.addChild(bubbleSprite)
 
-    circles.push(circle)
-    pixiApp.stage.addChild(circle)
+    // let circle = new PIXI.Graphics()
+    // let scale = Math.random() * 10 + 1
+    // circle.beginFill(0Xffffff)
+    // circle.arc(0, 0, scale, 0, Math.PI * 2)
+    // circle.alpha = Math.random()
+    // circle.position = {x: center.x + Math.random() * 1000 - 500, y: center.y + Math.random() * 1000 - 500}
+    // circle.moveX = Math.random() * 6 - 3
+    // circle.moveY = Math.random() * -15
+    // circle.endFill()
+    //
+    // circles.push(circle)
+    // pixiApp.stage.addChild(circle)
 }
 
 pixiApp.ticker.speed = 0.3
@@ -43,8 +52,8 @@ const animate = (delta) => {
         if (circle.alpha < 0) {
             circle.alpha = Math.random()
             circle.position = {
-                x: center.x + Math.random() * 200 - 100,
-                y: center.y
+                x: center.x + Math.random() * 1000 - 500,
+                y: center.y + Math.random() * 1000 - 500
             }
         }
     }

@@ -1,8 +1,8 @@
 <template>
-    <div class="about">
+    <div class="container">
         <div class="box">
             <BubbleEffect class="upper"/>
-            <img alt="illustya" src="@/assets/movie_baiyousou.png" height="500">
+            <img alt="illustya" src="@/assets/img/movie_baiyousou.png" height="500">
         </div>
     </div>
 </template>

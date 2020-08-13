@@ -1,34 +1,34 @@
 <template>
-    <div id="nav">
-        <header id="header">
-            <h1>This is the header.</h1>
-            <nav id="header-nav">
-                <ul>
-                    <router-link tag="li" to="/">Home</router-link>
-                    <router-link tag="li" to="/about">About</router-link>
-                </ul>
-            </nav>
-        </header>
-    </div>
+  <div>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top nav-color">
+      <router-link class="navbar-brand" to="/">上島研究所</router-link>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <router-link tag="li" class="nav-link" to="/">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link tag="li" class="nav-link" to="/about">Works</router-link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "Header"
-    }
+export default {
+  name: "Header"
+}
 </script>
 
 <style scoped>
-    #nav {
-        padding: 30px;
-    }
-
-    #nav a {
-        font-weight: bold;
-        color: #2c3e50;
-    }
-
-    #nav a.router-link-exact-active {
-        color: #42b983;
-    }
+.nav-color {
+  background: rgba(0, 0, 0, 0.5);
+}
 </style>
