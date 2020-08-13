@@ -1,21 +1,24 @@
 <template>
-    <div ref="canvas"/>
+  <div ref="canvas"/>
 </template>
 
 <script>
-    import * as pixiObj from '@/assets/pixi/pixi'
+import * as pixiObj from '@/assets/pixi/pixi'
 
-    export default {
-        name: "Bubble",
-        data() {
-            return {
-                pixiApp: pixiObj.pixiApp,
-            }
-        },
-        mounted() {
-            this.$refs.canvas.appendChild(this.pixiApp.view)
-        },
+export default {
+  name: "Bubble",
+  data() {
+    return {
+      pixiApp: pixiObj.pixiApp,
     }
+  },
+  mounted() {
+    this.$refs.canvas.appendChild(this.pixiApp.view)
+  },
+  destroyed() {
+    this.$refs
+  }
+}
 </script>
 
 <style scoped>

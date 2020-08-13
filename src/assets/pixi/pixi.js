@@ -10,34 +10,26 @@ background.drawRect(0, 0, pixiApp.renderer.screen.width, pixiApp.renderer.screen
 background.endFill()
 pixiApp.stage.addChild(background)
 
-//アニメーション部分
+//泡の生成
 const totalCircle = 50, center = {x: pixiApp.renderer.screen.width / 2, y: pixiApp.renderer.screen.height}
 let circles = [], circle
 
-let bubbleTexture = new PIXI.Texture.from('../img/logo.png')
 while (circles.length < totalCircle) {
-    let bubbleSprite = new PIXI.Sprite(bubbleTexture)
-    bubbleSprite.alpha = Math.random()
-    bubbleSprite.anchor.set(0.5)
-    bubbleSprite.x = center.x + Math.random() * 1000 - 500
-    bubbleSprite.x = center.y + Math.random() * 1000 - 500
-    circles.push(bubbleSprite)
-    pixiApp.stage.addChild(bubbleSprite)
+    let circle = new PIXI.Graphics()//ここ画像にできないか
+    let scale = Math.random() * 10 + 1
+    circle.beginFill(0Xffffff)
+    circle.arc(0, 0, scale, 0, Math.PI * 2)
+    circle.alpha = Math.random()
+    circle.position = {x: center.x + Math.random() * 1000 - 500, y: center.y + Math.random() * 1000 - 500}
+    circle.moveX = Math.random() * 6 - 3
+    circle.moveY = Math.random() * -15
+    circle.endFill()
 
-    // let circle = new PIXI.Graphics()
-    // let scale = Math.random() * 10 + 1
-    // circle.beginFill(0Xffffff)
-    // circle.arc(0, 0, scale, 0, Math.PI * 2)
-    // circle.alpha = Math.random()
-    // circle.position = {x: center.x + Math.random() * 1000 - 500, y: center.y + Math.random() * 1000 - 500}
-    // circle.moveX = Math.random() * 6 - 3
-    // circle.moveY = Math.random() * -15
-    // circle.endFill()
-    //
-    // circles.push(circle)
-    // pixiApp.stage.addChild(circle)
+    circles.push(circle)
+    pixiApp.stage.addChild(circle)
 }
 
+//アニメーション
 pixiApp.ticker.speed = 0.3
 pixiApp.ticker.add((delta) => {
     animate(delta)
