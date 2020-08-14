@@ -1,6 +1,13 @@
 <template>
   <div class="container">
-    <BubbleEffect/>
+    <div class="inner">
+      <BubbleEffect class="bubble"/>
+      <ul class="main-menu">
+        <li>スキル</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -18,4 +25,20 @@ export default {
 
 <style scoped>
 
+.inner {
+  position: relative;
+
+}
+
+.bubble {
+  position: fixed;
+  width: 100%;
+}
+
+.main-menu {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 </style>

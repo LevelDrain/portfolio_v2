@@ -3,86 +3,81 @@
 </template>
 
 <script>
-import * as threeObj from '@/assets/three/three'
-import * as THREE from 'three'
+import * as PIXI from 'pixi.js'
 
 export default {
   name: "Bubble",
   data() {
     return {
-      scene: threeObj.scene,
-      renderer: threeObj.renderer,
-      camera: threeObj.camera,
-      light: threeObj.light,
-      loader: threeObj.loader,
-      bubbles: [],
-      bubble: null,
+      pixiApp: null,
+      backgroundAlpha: 0,
+      background: null,
+      center: null,
+      circles: [],
     }
   },
   created() {
-    // const geometry = new THREE.BoxGeometry(1, 1, 1);
-    // const material = new THREE.MeshLambertMaterial({color: 0xf066aa});
-    // const cube = new THREE.Mesh(geometry, material);
-    // this.scene.add(cube);
+    this.pixiApp = new PIXI.Application({width: window.innerWidth, height: window.innerHeight, transparent: true})
 
-    this.camera.position.set(0, 0, 2)
-    this.light.position.set(1, 1, 1)
-    this.light.intensity = 3
-    this.scene.add(this.light);
+    //背景
+    this.background = new PIXI.Graphics()
+    this.background.beginFill(0x000000, this.backgroundAlpha)
+    this.background.drawRect(0, 0, this.pixiApp.renderer.screen.width, this.pixiApp.renderer.screen.height)
+    this.background.endFill()
+    this.pixiApp.stage.addChild(this.background)
 
-    const totalBubble = 20
-    const max = .5, min = max / 2
-    while (this.bubbles.length < totalBubble) {
-      this.bubble = new THREE.Mesh(
-          new THREE.SphereGeometry(1, 32, 32),
-          new THREE.MeshBasicMaterial({
-            //map: this.loader.load('../assets/img/logo.png'),
-            color: 0xffffff,
-            transparent: true
-          })
-      )
-      this.bubble.move = {
-        x: Math.random() * max - min,
-        y: Math.random() * max,
-        z: Math.random() * max - min
-      }
-      this.bubble.position.y = -12
-      this.bubble.position.x = 0
-      this.bubble.position.z = 0
-      this.bubble.material.opacity = Math.random()
-      this.bubble.defPos = this.bubble.getWorldPosition()
+    //泡の生成
+    const totalCircle = 80
+    this.center = {x: this.pixiApp.renderer.screen.width / 2, y: this.pixiApp.renderer.screen.height}
 
-      this.bubbles.push(this.bubble)
-      this.scene.add(this.bubble)
+    while (this.circles.length < totalCircle) {
+      let circle = PIXI.Sprite.from(require('../assets/img/bubble.png'));
+      circle.height = circle.width = Math.random() * 10 + 1
+      circle.alpha = Math.random()
+      circle.position.x = this.center.x + Math.random() * 1000 - 500
+      circle.position.y = this.center.y + Math.random() * 1000 - 500
+      circle.moveX = Math.random() * 6 - 3
+      circle.moveY = Math.random() * -15
+
+      this.circles.push(circle)
+      this.pixiApp.stage.addChild(circle)
     }
   },
   mounted() {
-    this.$refs.canvas.appendChild(this.renderer.domElement)
-    this.tick()
+    this.$refs.canvas.appendChild(this.pixiApp.view)
+
+    //アニメーション
+    this.pixiApp.ticker.speed = 0.3
+    this.pixiApp.ticker.add((delta) => {
+      this.animate(delta)
+    })
+
   },
   destroyed() {
-    this.$refs,
-        this.bubbles,
-        this.scene,
-        this.tick()
+    this.$refs
+    this.pixiApp.stage.removeChildren()
   },
   methods: {
-    tick() {
-      this.bubbles.forEach(obj => {
-        let delta = 0.001;
-        obj.position.x += obj.move.x;
-        obj.position.y += obj.move.y;
-        obj.position.z += obj.move.z;
-        obj.material.opacity -= delta;
-
-        if (obj.material.opacity <= 0) {
-          obj.position.set(obj.defPos.x, obj.defPos.y, obj.defPos.z);
-          obj.material.opacity = Math.random();
+    animate(delta) {
+      for (let i = 0; i < this.circles.length; i++) {
+        let each = this.circles[i]
+        each.position.x += each.moveX * delta
+        each.position.y += each.moveY * delta
+        each.alpha -= 0.01
+        if (each.alpha < 0) {
+          each.alpha = Math.random()
+          each.position = {
+            x: this.center.x + Math.random() * 1000 - 500,
+            y: this.center.y + Math.random() * 1000 - 500
+          }
         }
-      });
+      }
+      this.pixiApp.renderer.render(this.pixiApp.stage)
 
-      this.renderer.render(this.scene, this.camera);
-      requestAnimationFrame(this.tick);
+      //今回はpixi.jsのtickerで毎フレーム呼び出す
+      // setTimeout(() => {
+      //     requestAnimationFrame(this.animate)
+      // }, 1000 / 50)
     }
   }
 }
