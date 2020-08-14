@@ -1,32 +1,57 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <header id="Header">
+      <HeaderBar/>
+    </header>
+    <main id="Main" role="main">
+      <router-view/>
+    </main>
+    <footer id="Footer">
+      <FooterBar/>
+    </footer>
   </div>
 </template>
 
+<script>
+import HeaderBar from '@/components/HeaderBar'
+import FooterBar from '@/components/FooterBar'
+
+export default {
+  name: 'App',
+  components: {
+    HeaderBar,
+    FooterBar
+  }
+}
+</script>
+
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Roboto+Slab:wght@400;500&display=swap');
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #fff;
 }
 
-#nav {
-  padding: 30px;
+#Header {
+  font-family: 'Roboto Slab', serif;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+#Main {
+  font-family: 'Fredericka the Great', cursive;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/img/jeremy-jozwik-braininjar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+#Footer {
+  font-family: 'Roboto Slab', serif;
 }
+
+@media all and (min-width: 768px) {
+}
+
 </style>

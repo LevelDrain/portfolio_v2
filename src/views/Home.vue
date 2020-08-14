@@ -1,18 +1,44 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <div class="inner">
+      <BubbleEffect class="bubble"/>
+      <ul class="main-menu">
+        <li>スキル</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
+import BubbleEffect from '@/components/Bubble.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    BubbleEffect
   }
 }
 </script>
+
+<style scoped>
+
+.inner {
+  position: relative;
+
+}
+
+.bubble {
+  position: fixed;
+  width: 100%;
+}
+
+.main-menu {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+</style>
