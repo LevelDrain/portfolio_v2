@@ -39,11 +39,14 @@ export default {
 }
 
 #Main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   font-family: 'Fredericka the Great', cursive;
-  width: 100vw;
-  height: 100vh;
   background-image: url("./assets/img/jeremy-jozwik-braininjar.jpg");
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
 }
 
