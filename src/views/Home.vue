@@ -1,12 +1,30 @@
 <template>
-  <div class="position-relative d-flex justify-content-center">
-    <BubbleEffect class="position-fixed w-100"/>
-    <SlideSection v-show="showSection" v-on:close-section="closeSection"/>
-    <ul class="main-menu">
-      <li @click="openSection">スキル</li>
-      <li>プロフ</li>
-      <li>成果物</li>
-    </ul>
+  <div class="container">
+    <div class="position-relative d-flex justify-content-center">
+      <BubbleEffect class="position-absolute w-100"/>
+      <SlideSection v-show="showSection" v-on:close-section="closeSection"/>
+      <ul class="main-menu">
+        <li @click="openSection">スキル</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -39,10 +57,10 @@ export default {
 
 <style scoped>
 .main-menu {
-  z-index: 100;
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 4.5em;
+  margin-top: 5%;
+  padding: 2% 5%;
 }
 </style>

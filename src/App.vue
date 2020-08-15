@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="container h-100">
+    <div class="h-100 main-bg">
       <header id="Header" class="fixed-top">
         <HeaderBar/>
       </header>
@@ -41,14 +41,14 @@ export default {
 }
 
 #Main {
-  position: fixed;
-  top: 0;
-  left: 0;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   font-family: 'Fredericka the Great', cursive;
+  /*background: #333333;*/
 }
 
 #Footer {
@@ -58,7 +58,12 @@ export default {
 /* モバイルの背景 */
 /* TODO:背景制作予定 */
 
-#Main {
+.main-bg {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   background-image: url("./assets/img/jeremy-jozwik-braininjar.jpg");
   background-position: center center;
   background-attachment: fixed;
@@ -68,7 +73,12 @@ export default {
 }
 
 @media all and (min-width: 768px) {
-  #Main {
+  .main-bg {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
     background-image: url("./assets/img/jeremy-jozwik-braininjar.jpg");
     background-position: center center;
     background-attachment: fixed;
