@@ -48,6 +48,7 @@ export default {
   overflow-y: auto;
   overflow-x: hidden;
   font-family: 'Fredericka the Great', cursive;
+  transform: translateZ(0);
   /*background: #333333;*/
 }
 
