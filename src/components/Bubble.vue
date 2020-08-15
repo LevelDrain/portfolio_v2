@@ -32,7 +32,7 @@ export default {
 
     while (this.circles.length < totalCircle) {
       let circle = PIXI.Sprite.from(require('../assets/img/bubble.png'));
-      circle.height = circle.width = Math.random() * 10 + 1
+      circle.height = circle.width = (Math.random() * 10 + 1) + 10
       circle.alpha = Math.random()
       circle.position.x = this.center.x + Math.random() * 1000 - 500
       circle.position.y = this.center.y + Math.random() * 1000 - 500
