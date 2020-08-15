@@ -59,6 +59,7 @@ export default {
 /* TODO:背景制作予定 */
 
 .main-bg {
+  z-index: -10;
   position: fixed;
   min-width: 100%;
   min-height: 100%;
@@ -74,6 +75,7 @@ export default {
 
 @media all and (min-width: 768px) {
   .main-bg {
+    z-index: -10;
     position: fixed;
     min-width: 100%;
     min-height: 100%;
