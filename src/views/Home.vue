@@ -4,7 +4,7 @@
       <BubbleEffect class="position-absolute w-100"/>
       <SlideSection v-show="showSection" v-on:close-section="closeSection"/>
       <ul class="main-menu">
-        <li @click="openSection">スキル</li>
+        <li>スキル</li>
         <li>プロフ</li>
         <li>成果物</li>
         <li>プロフ</li>
@@ -23,6 +23,20 @@
         <li>成果物</li>
         <li>プロフ</li>
         <li>成果物</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+        <li>プロフ</li>
+        <li>成果物</li>
+        <li>プロフ</li>
+        <li @click="openSection">成果物</li>
       </ul>
     </div>
   </div>
