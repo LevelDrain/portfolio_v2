@@ -1,15 +1,59 @@
 <template>
   <transition name="section">
-    <div class="section">
-      <p>hello</p><br>
-      <p>hello</p><br>
-      <p>hello</p><br>
-      <p>hello</p><br>
-      <p>hello</p><br>
-      <p>hello</p><br>
-      <p>hello</p><br>
-      <p>hello</p><br>
-      <button @click="$emit('close-section')">close</button>
+    <div class="section-wrap">
+      <div class="section">
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <p>hello</p><br>
+        <button @click="$emit('close-section')">close</button>
+      </div>
     </div>
   </transition>
 </template>
@@ -24,15 +68,28 @@ export default {
 </script>
 
 <style scoped>
+.section-wrap {
+  z-index: 50;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .section {
-  z-index: 200;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform: translateZ(0);
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .section-enter-active, .section-leave-active {

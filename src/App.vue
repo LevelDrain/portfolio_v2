@@ -4,9 +4,12 @@
       <header id="Header" class="fixed-top">
         <HeaderBar/>
       </header>
+
+      <BubbleEffect class="canvas-bg"/>
       <main id="Main" role="main">
         <router-view/>
       </main>
+
       <footer id="Footer" class="fixed-bottom">
         <FooterBar/>
       </footer>
@@ -17,12 +20,14 @@
 <script>
 import HeaderBar from '@/components/HeaderBar'
 import FooterBar from '@/components/FooterBar'
+import BubbleEffect from '@/components/Bubble.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderBar,
-    FooterBar
+    FooterBar,
+    BubbleEffect,
   }
 }
 </script>
@@ -37,22 +42,30 @@ export default {
 }
 
 #Header {
+  z-index: 200;
   font-family: 'Roboto Slab', serif;
 }
 
+.canvas-bg {
+  z-index: -5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #Main {
+  z-index: 0;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-  overflow-y: auto;
-  overflow-x: hidden;
   font-family: 'Fredericka the Great', cursive;
-  transform: translateZ(0);
-  /*background: #333333;*/
 }
 
 #Footer {
+  z-index: 200;
   font-family: 'Roboto Slab', serif;
 }
 

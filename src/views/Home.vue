@@ -1,10 +1,8 @@
 <template>
-  <div class="container">
-    <div class="position-relative d-flex justify-content-center">
-      <BubbleEffect class="position-absolute w-100"/>
-      <SlideSection v-show="showSection" v-on:close-section="closeSection"/>
-      <ul class="main-menu">
-        <li>スキル</li>
+  <div class="container-fluid">
+    <SlideSection v-show="showSection" v-on:close-section="closeSection"/>
+    <div class="main-menu">
+      <ul>
         <li>プロフ</li>
         <li>成果物</li>
         <li>プロフ</li>
@@ -44,13 +42,11 @@
 
 <script>
 
-import BubbleEffect from '@/components/Bubble.vue'
 import SlideSection from '@/components/SlideSection.vue'
 
 export default {
   name: 'Home',
   components: {
-    BubbleEffect,
     SlideSection
   },
   data() {
@@ -71,10 +67,19 @@ export default {
 
 <style scoped>
 .main-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  margin-top: 5%;
-  padding: 2% 5%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: translateZ(0);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /*background: #333333;*/
 }
 </style>
