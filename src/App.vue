@@ -1,14 +1,16 @@
 <template>
   <div id="app">
-    <header id="Header">
-      <HeaderBar/>
-    </header>
-    <main id="Main" role="main">
-      <router-view/>
-    </main>
-    <footer id="Footer">
-      <FooterBar/>
-    </footer>
+    <div class="container h-100">
+      <header id="Header" class="fixed-top">
+        <HeaderBar/>
+      </header>
+      <main id="Main" role="main">
+        <router-view/>
+      </main>
+      <footer id="Footer" class="fixed-bottom">
+        <FooterBar/>
+      </footer>
+    </div>
   </div>
 </template>
 
@@ -42,19 +44,37 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   font-family: 'Fredericka the Great', cursive;
-  background-image: url("./assets/img/jeremy-jozwik-braininjar.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 #Footer {
   font-family: 'Roboto Slab', serif;
 }
 
-@media all and (min-width: 768px) {
+/* モバイルの背景 */
+/* TODO:背景制作予定 */
+
+#Main {
+  background-image: url("./assets/img/jeremy-jozwik-braininjar.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #333333;
 }
 
+@media all and (min-width: 768px) {
+  #Main {
+    background-image: url("./assets/img/jeremy-jozwik-braininjar.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #333333;
+  }
+}
 </style>

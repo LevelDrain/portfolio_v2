@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed-bottom footer-color">
+  <div class="footer-color">
     <span class="text-muted">フッターのコンテンツをここに置きます．</span>
   </div>
 </template>
