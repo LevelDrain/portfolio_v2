@@ -7,7 +7,7 @@
           <li>プロフ</li>
           <li>成果物</li>
           <li>プロフ</li>
-          <li>{{ showSection }}</li>
+          <li>{{ this.$store.state.loading }}</li>
           <li>プロフ</li>
           <li @click="open">成果物</li>
         </ul>
