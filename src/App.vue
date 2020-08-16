@@ -9,6 +9,7 @@
       <main id="Main" role="main">
         <router-view/>
       </main>
+      <Loading/>
 
       <footer id="Footer" class="fixed-bottom">
         <FooterBar/>
@@ -21,6 +22,7 @@
 import HeaderBar from '@/components/HeaderBar'
 import FooterBar from '@/components/FooterBar'
 import BubbleEffect from '@/components/Bubble.vue'
+import Loading from "@/components/Loading";
 
 export default {
   name: 'App',
@@ -28,6 +30,7 @@ export default {
     HeaderBar,
     FooterBar,
     BubbleEffect,
+    Loading
   }
 }
 </script>

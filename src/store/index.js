@@ -5,9 +5,13 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
+        loading: false,
         showSection: false
     },
     mutations: {
+        setLoading(state, payload) {
+            state.loading = payload
+        },
         openSection(state) {
             state.showSection = true
         },

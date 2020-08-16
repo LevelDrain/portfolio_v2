@@ -9,7 +9,7 @@
           <li>プロフ</li>
           <li>{{ showSection }}</li>
           <li>プロフ</li>
-          <li @click="open">成果物</li>
+          <li @click="onLoadOpen">成果物</li>
         </ul>
       </div>
     </div>
@@ -31,7 +31,17 @@ export default {
   },
   methods: {
     open() {
-      this.$store.commit('openSection')
+      //this.$store.commit('openSection')
+      return new Promise(resolve => {
+        setTimeout(() => {
+          resolve(this.$store.commit('openSection')), 3000
+        })
+      })
+    },
+    async onLoadOpen() {
+      this.$store.commit('setLoading', true)
+      await this.open()
+      this.$store.commit('setLoading', false)
     }
   }
 }
