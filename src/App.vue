@@ -5,11 +5,20 @@
         <HeaderBar/>
       </header>
 
+      <loading
+          :active.sync="isLoading"
+          :can-cancel="true"
+          :is-full-page="true"
+          :transition="'fade'"
+          :color="'#00ffff'"
+          :loader="'bars'"
+          :backgroundColor="'#000'"
+          :opacity=0.8
+      />
       <BubbleEffect class="canvas-bg"/>
       <main id="Main" role="main">
         <router-view/>
       </main>
-      <Loading/>
 
       <footer id="Footer" class="fixed-bottom">
         <FooterBar/>
@@ -22,7 +31,6 @@
 import HeaderBar from '@/components/HeaderBar'
 import FooterBar from '@/components/FooterBar'
 import BubbleEffect from '@/components/Bubble.vue'
-import Loading from "@/components/Loading";
 
 export default {
   name: 'App',
@@ -30,7 +38,23 @@ export default {
     HeaderBar,
     FooterBar,
     BubbleEffect,
-    Loading
+  },
+  data() {
+    return {
+      showSection: this.$store.state.showSection,
+      isLoading: false,
+    }
+  },
+  created() {
+    this.doLoading()
+  },
+  methods: {
+    doLoading() {
+      this.isLoading = true
+      setTimeout(() => {
+        this.isLoading = false
+      }, 2000)
+    }
   }
 }
 </script>
@@ -105,5 +129,15 @@ export default {
     background-repeat: no-repeat;
     background-color: #333333;
   }
+}
+
+/* ローディングアニメーション（フェード） */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
+{
+  opacity: 0;
 }
 </style>

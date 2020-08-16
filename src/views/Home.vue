@@ -4,7 +4,6 @@
     <div class="main-menu">
       <div class="main-menu-inner">
         <ul>
-          <li>プロフ</li>
           <li>成果物</li>
           <li>プロフ</li>
           <li>{{ this.$store.state.loading }}</li>
@@ -22,32 +21,17 @@ import Modal from '@/components/Modal.vue'
 export default {
   name: 'Home',
   components: {
-    Modal
+    Modal,
   },
   data() {
     return {
-      showSection: this.$store.state.showSection
+      showSection: this.$store.state.showSection,
     }
-  },
-  created() {
-    this.onLoadOpen()
   },
   methods: {
     open() {
       this.$store.commit('openSection')
     },
-    loadWindow() {
-      return new Promise(resolve => {
-        setTimeout(() => {
-          resolve(window.onload), 3000
-        })
-      })
-    },
-    async onLoadOpen() {
-      this.$store.commit('setLoading', true)
-      await this.loadWindow()
-      this.$store.commit('setLoading', false)
-    }
   }
 }
 </script>
