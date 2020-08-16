@@ -70,11 +70,7 @@ export default {
 <style scoped>
 /* オーバーレイデザイン */
 .section-overlay {
-  z-index: 50;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -88,7 +84,7 @@ export default {
 
 /* スクロール有コンテンツ */
 .section {
-  position: fixed;
+  position: absolute;
   top: 0;
   overflow-y: scroll;
   overflow-x: hidden;

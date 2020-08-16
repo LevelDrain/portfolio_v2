@@ -1,42 +1,20 @@
 <template>
-  <div class="container-fluid">
-    <SlideSection v-show="showSection" v-on:close-section="closeSection"/>
-    <div class="main-menu">
+  <div class="container-fluid full-page-scroll">
+    <section class="section">
       <ul>
-        <li>プロフ</li>
+        <li @click="openSection">
+          <router-link :to="'#MainSection'">
+            プロフ
+          </router-link>
+        </li>
         <li>成果物</li>
         <li>プロフ</li>
         <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li @click="openSection">成果物</li>
       </ul>
-    </div>
+    </section>
+    <section id="MainSection" class="section">
+      <SlideSection v-show="showSection" v-on:close-section="closeSection"/>
+    </section>
   </div>
 </template>
 
@@ -51,7 +29,7 @@ export default {
   },
   data() {
     return {
-      showSection: false
+      showSection: false,
     }
   },
   methods: {
@@ -66,20 +44,18 @@ export default {
 </script>
 
 <style scoped>
-.main-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transform: translateZ(0);
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.full-page-scroll {
   width: 100%;
-  height: 100%;
-  /*background: #333333;*/
+  height: 100vh;
+  /*scroll-snap-type: y mandatory;*/
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  padding: 10%;
+  /*scroll-snap-align: start;*/
 }
 </style>
