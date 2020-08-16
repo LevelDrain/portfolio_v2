@@ -16,12 +16,19 @@
         </li>
       </ul>
     </div>
+
+    <img src="../assets/img/logo.png" alt="" v-show="this.$store.state.showSection" @click="close" class="close-button">
   </nav>
 </template>
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  methods: {
+    close() {
+      this.$store.commit('closeSection')
+    }
+  }
 }
 </script>
 
@@ -29,4 +36,12 @@ export default {
 .nav-color {
   background: rgba(0, 0, 0, 0.5);
 }
+
+.close-button {
+  z-index: 100;
+  display: block;
+  width: 2em;
+  height: 2em;
+}
+
 </style>

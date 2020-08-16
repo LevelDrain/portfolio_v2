@@ -1,47 +1,22 @@
 <template>
   <div class="container-fluid">
-    <Modal v-show="showSection" v-on:close-section="closeSection"/>
+    <Modal v-show="this.$store.state.showSection"/>
     <div class="main-menu">
-      <ul>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li>成果物</li>
-        <li>プロフ</li>
-        <li @click="openSection">成果物</li>
-      </ul>
+      <div class="main-menu-inner">
+        <ul>
+          <li>プロフ</li>
+          <li>成果物</li>
+          <li>プロフ</li>
+          <li>{{ showSection }}</li>
+          <li>プロフ</li>
+          <li @click="open">成果物</li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-
 import Modal from '@/components/Modal.vue'
 
 export default {
@@ -51,15 +26,12 @@ export default {
   },
   data() {
     return {
-      showSection: false
+      showSection: this.$store.state.showSection
     }
   },
   methods: {
-    openSection() {
-      this.showSection = true
-    },
-    closeSection() {
-      this.showSection = false
+    open() {
+      this.$store.commit('openSection')
     }
   }
 }
@@ -70,16 +42,41 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  /*background: #333333;*/
+}
+
+.main-menu-inner {
+  position: fixed;
+  top: 10%;
   overflow-y: auto;
   overflow-x: hidden;
   transform: translateZ(0);
 
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   width: 100%;
-  height: 100%;
+  height: 85vh;
   /*background: #333333;*/
+}
+
+.main-menu-inner li {
+  list-style: none;
+}
+
+/* メニューの位置調整 */
+.main-menu-inner {
+  padding-top: 30%;
+  padding-left: 10%;
+}
+
+@media all and (min-width: 768px) {
+  .main-menu-inner {
+    padding-top: 10%;
+    padding-left: 10%;
+  }
 }
 </style>

@@ -1,8 +1,6 @@
 <template>
   <transition name="section">
     <div class="section-overlay">
-      <img src="../assets/img/logo.png" alt="" class="close-button" @click="$emit('close-section')">
-
       <div class="section">
         <p>hello</p><br>
         <p>hello</p><br>
@@ -53,8 +51,7 @@
         <p>hello</p><br>
         <p>hello</p><br>
         <p>hello</p><br>
-        <p>hello</p><br>
-        <button @click="$emit('close-section')">close</button>
+        <p>hello</p>
       </div>
     </div>
   </transition>
@@ -70,16 +67,6 @@ export default {
 </script>
 
 <style scoped>
-.close-button {
-  z-index: 100;
-  position: fixed;
-  top: 10%;
-  right: 7%;
-  display: block;
-  width: 2em;
-  height: 2em;
-}
-
 /* オーバーレイデザイン */
 .section-overlay {
   z-index: 50;
@@ -106,7 +93,7 @@ export default {
   overflow-x: hidden;
   transform: translateZ(0);
   width: 90%;
-  height: 83%;
+  height: 80vh;
   margin: auto;
   /*background: #333333;*/
   background-image: url("../assets/img/cyberpankui.jpg");
