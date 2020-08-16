@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <SlideSection v-show="showSection" v-on:close-section="closeSection"/>
+    <Modal v-show="showSection" v-on:close-section="closeSection"/>
     <div class="main-menu">
       <ul>
         <li>プロフ</li>
@@ -42,12 +42,12 @@
 
 <script>
 
-import SlideSection from '@/components/SlideSection.vue'
+import Modal from '@/components/Modal.vue'
 
 export default {
   name: 'Home',
   components: {
-    SlideSection
+    Modal
   },
   data() {
     return {

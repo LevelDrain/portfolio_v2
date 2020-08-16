@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
+import Vuex from 'vuex'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
-Vue.use(VueRouter)
 Vue.use(BootstrapVue)
+Vue.use(VueRouter)
+Vue.use(Vuex)
 
 import 'normalize.css'
 import 'bootstrap/dist/css/bootstrap.css'
