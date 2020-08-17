@@ -2,14 +2,14 @@
   <nav class="navbar navbar-dark nav-color">
     <router-link class="navbar-brand ml-2" to="/">上島研究所</router-link>
 
-    <div class="d-flex">
-      <ul class="navbar-nav mr-auto d-flex flex-row">
-        <router-link tag="li" class="nav-link nav-item mr-2 font-size" to="/">Home</router-link>
-        <router-link tag="li" class="nav-link nav-item mr-2 font-size" to="/works">Works</router-link>
-      </ul>
-      <img src="../assets/img/logo.png" alt="" v-show="this.$store.state.showSection" @click="close"
+    <ul class="navbar-nav d-flex flex-row">
+      <router-link tag="li" class="nav-link nav-item mr-2 font-size" v-show="$store.state.inHome" to="/">Home
+      </router-link>
+      <router-link tag="li" class="nav-link nav-item mr-2 font-size" v-show="$store.state.inWork" to="/works">Works
+      </router-link>
+      <img src="../assets/img/logo.png" alt="" v-show="$store.state.showSection" @click="close"
            class="close-button">
-    </div>
+    </ul>
   </nav>
 </template>
 

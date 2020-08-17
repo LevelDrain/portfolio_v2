@@ -11,8 +11,14 @@
 
 <script>
 export default {
-  name: 'About',
+  name: 'Works',
   components: {},
+  created() {
+    if (this.$route.path === '/works') {
+      this.$store.state.inWork = false
+      this.$store.state.inHome = true
+    }
+  }
 }
 </script>
 

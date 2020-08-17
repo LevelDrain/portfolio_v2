@@ -28,6 +28,12 @@ export default {
       showSection: this.$store.state.showSection,
     }
   },
+  created() {
+    if (this.$route.path === '/') {
+      this.$store.state.inWork = true
+      this.$store.state.inHome = false
+    }
+  },
   methods: {
     open() {
       this.$store.commit('openSection')

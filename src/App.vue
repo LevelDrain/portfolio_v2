@@ -13,7 +13,7 @@
           :color="'#00ffff'"
           :loader="'bars'"
           :backgroundColor="'#000'"
-          :opacity=0.8
+          :opacity=1
       />
       <BubbleEffect class="canvas-bg"/>
       <main id="Main" role="main">

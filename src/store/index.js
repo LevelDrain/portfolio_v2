@@ -5,6 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
+        inHome: false,
+        inWork: true,
         showSection: false
     },
     mutations: {
