@@ -3,12 +3,13 @@
     <Modal v-show="this.$store.state.showSection"/>
     <div class="main-menu">
       <div class="main-menu-inner">
+        <p>We might be actually a brain hooked up to a computer program that can perfectly simulate experiences of the outside world. </p>
+
         <ul>
-          <li>成果物</li>
-          <li>プロフ</li>
-          <li>{{ this.$store.state.loading }}</li>
-          <li>プロフ</li>
-          <li @click="open">成果物</li>
+          <li>LEVEL1：スキルについて</li>
+          <li>LEVEL2：自己紹介</li>
+          <li>LEVEL3：本ポートフォリオについて</li>
+          <li @click="open">🌟押すべし🌟</li>
         </ul>
       </div>
     </div>
@@ -60,7 +61,7 @@ export default {
   transform: translateZ(0);
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: start;
   align-items: start;
   width: 100%;

@@ -2,66 +2,36 @@
   <transition name="section">
     <div class="section-overlay">
       <div class="section">
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p><br>
-        <p>hello</p>
+        <!-- propsで渡してArticleを切り替えすること -->
+        <div v-bind:is="componentTypes[current]"></div>
+        <!-- current^=1 排他的論理和（違う方を返す演算子） -->
+        <button v-on:click="current^=1">toggle</button>
       </div>
     </div>
   </transition>
 </template>
 
 <script>
+import Article1 from "@/components/articles/Article1";
+import Article2 from "@/components/articles/Article2";
+
 export default {
   name: "Modal",
+  components: {
+    'article1': Article1,
+    'article2': Article2,
+  },
   data() {
-    return {}
+    return {
+      componentTypes: ['article1', 'article2'],
+      current: 0
+    }
+  },
+  computed: {
+    component() {
+      // 一致しているコンポーネント名を返す
+      return this.componentTypes[this.current]
+    }
   }
 }
 </script>
