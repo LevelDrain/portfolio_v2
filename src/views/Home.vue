@@ -1,9 +1,10 @@
 <template>
   <div class="container-fluid">
-    <Modal v-show="this.$store.state.showSection"/>
+    <Modal v-show="this.$store.state.showSection" />
     <div class="main-menu">
       <div class="main-menu-inner">
-        <p>We might be actually a brain hooked up to a computer program that can perfectly simulate experiences of the outside world. </p>
+        <p>We might be actually a brain hooked up to a computer program that can perfectly simulate experiences of the
+          outside world. </p>
 
         <ul>
           <li>LEVEL1：スキルについて</li>
@@ -75,14 +76,12 @@ export default {
 
 /* メニューの位置調整 */
 .main-menu-inner {
-  padding-top: 30%;
-  padding-left: 10%;
+  padding: 30% 10%;
 }
 
 @media all and (min-width: 768px) {
   .main-menu-inner {
-    padding-top: 10%;
-    padding-left: 10%;
+    padding: 10%;
   }
 }
 </style>
