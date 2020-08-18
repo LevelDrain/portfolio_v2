@@ -3,9 +3,9 @@
     <div class="section-overlay">
       <div class="section">
         <!-- propsで渡してArticleを切り替えすること -->
-        <div v-bind:is="componentTypes[current]"></div>
+        <div v-bind:is="articleID"></div>
         <!-- current^=1 排他的論理和（違う方を返す演算子） -->
-        <button v-on:click="current^=1">toggle</button>
+        <!-- <button v-on:click="current^=1">toggle</button> -->
       </div>
     </div>
   </transition>
@@ -21,18 +21,19 @@ export default {
     'article1': Article1,
     'article2': Article2,
   },
+  props: ['articleID'],
   data() {
     return {
-      componentTypes: ['article1', 'article2'],
-      current: 0
+      //componentTypes: ['article1', 'article2'],
+      //current: 0
     }
   },
-  computed: {
-    component() {
-      // 一致しているコンポーネント名を返す
-      return this.componentTypes[this.current]
-    }
-  }
+  // computed: {
+  //   component() {
+  //     // 一致しているコンポーネント名を返す
+  //     return this.componentTypes[this.current]
+  //   }
+  // }
 }
 </script>
 

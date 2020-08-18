@@ -1,16 +1,16 @@
 <template>
   <div class="container-fluid">
-    <Modal v-show="this.$store.state.showSection" />
+    <Modal v-show="this.$store.state.showSection" :articleID="articleID"/>
     <div class="main-menu">
       <div class="main-menu-inner">
         <p>We might be actually a brain hooked up to a computer program that can perfectly simulate experiences of the
           outside world. </p>
 
         <ul>
-          <li>LEVEL1：スキルについて</li>
-          <li>LEVEL2：自己紹介</li>
+          <li @click="open('article1')">LEVEL1：スキルについて</li>
+          <li @click="open('article2')">LEVEL2：自己紹介</li>
           <li>LEVEL3：本ポートフォリオについて</li>
-          <li @click="open">🌟押すべし🌟</li>
+          <li>🌟押すべし🌟</li>
         </ul>
       </div>
     </div>
@@ -28,6 +28,7 @@ export default {
   data() {
     return {
       showSection: this.$store.state.showSection,
+      articleID: ''
     }
   },
   created() {
@@ -37,8 +38,9 @@ export default {
     }
   },
   methods: {
-    open() {
+    open(id) {
       this.$store.commit('openSection')
+      this.articleID = id
     },
   }
 }
