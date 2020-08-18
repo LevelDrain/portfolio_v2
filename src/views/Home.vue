@@ -5,12 +5,12 @@
       <div class="main-menu-inner">
         <p>We might be actually a brain hooked up to a computer program that can perfectly simulate experiences of the
           outside world. </p>
+        <p>…… So I wanna be an ARTISAN for human brains.</p>
 
         <ul>
           <li @click="open('article1')">LEVEL1：スキルについて</li>
           <li @click="open('article2')">LEVEL2：自己紹介</li>
           <li>LEVEL3：本ポートフォリオについて</li>
-          <li>🌟押すべし🌟</li>
         </ul>
       </div>
     </div>
