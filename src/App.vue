@@ -45,7 +45,7 @@ export default {
       isLoading: false,
     }
   },
-  created() {
+  beforeCreate() {
     this.doLoading()
   },
   methods: {
@@ -106,7 +106,7 @@ export default {
   min-height: 100%;
   width: auto;
   height: auto;
-  background-image: url("./assets/img/jeremy-jozwik-braininjar.jpg");
+  background-image: url("./assets/img/img_bg_pc.jpg");
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
@@ -122,7 +122,7 @@ export default {
     min-height: 100%;
     width: auto;
     height: auto;
-    background-image: url("./assets/img/jeremy-jozwik-braininjar.jpg");
+    background-image: url("./assets/img/img_bg_pc.jpg");
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
