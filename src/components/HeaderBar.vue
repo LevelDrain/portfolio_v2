@@ -7,7 +7,7 @@
       </router-link>
       <router-link tag="li" class="nav-link nav-item mr-2 font-size" v-show="this.$store.state.inWork" to="/works">Works
       </router-link>
-      <img src="../assets/img/logo.png" alt="" v-show="this.$store.state.showSection" @click="close"
+      <img src="../assets/img/img_close.svg" alt="" v-show="this.$store.state.showSection" @click="close"
            class="close-button">
     </ul>
   </nav>

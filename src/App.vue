@@ -60,17 +60,17 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Roboto+Slab:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=PT+Serif&display=swap');
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'PT Serif', 'Noto Serif JP', serif;
   text-align: center;
   color: #fff;
 }
 
 #Header {
   z-index: 200;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'PT Serif', 'Noto Serif JP', serif;
 }
 
 .canvas-bg {
@@ -88,12 +88,12 @@ export default {
   min-height: 100%;
   width: auto;
   height: auto;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'PT Serif', 'Noto Serif JP', serif;
 }
 
 #Footer {
   z-index: 200;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'PT Serif', 'Noto Serif JP', serif;
 }
 
 /* モバイルの背景 */
@@ -106,7 +106,7 @@ export default {
   min-height: 100%;
   width: auto;
   height: auto;
-  background-image: url("./assets/img/img_bg_pc.jpg");
+  background-image: url("./assets/img/img_bg_sp.png");
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
@@ -122,7 +122,7 @@ export default {
     min-height: 100%;
     width: auto;
     height: auto;
-    background-image: url("./assets/img/img_bg_pc.jpg");
+    background-image: url("./assets/img/img_bg_pc.png");
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;

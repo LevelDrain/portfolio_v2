@@ -3,7 +3,7 @@
     <div class="section-overlay">
       <div class="section">
         <!-- propsで渡してArticleを切り替えすること -->
-        <div v-bind:is="articleID"></div>
+        <div class="text-layout" v-bind:is="articleID"></div>
         <!-- current^=1 排他的論理和（違う方を返す演算子） -->
         <!-- メモ：<button v-on:click="current^=1">toggle</button> -->
       </div>
@@ -54,10 +54,12 @@ export default {
   width: 90%;
   height: 80vh;
   margin: auto;
-  /*background: #333333;*/
-  background-image: url("../assets/img/cyberpankui.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgba(0, 0, 0, .9);
+  /*background-image: url("../assets/img/img_gui_sp.png");*/
+  /*background-position: center center;*/
+  /*background-attachment: fixed;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: auto;*/
 }
 
 /* スクロールバーの横幅指定 */
@@ -67,12 +69,12 @@ export default {
 
 /* スクロールバーの背景色 */
 .section::-webkit-scrollbar-track {
-  background: #111111;
+  background: #2b4c5a;
 }
 
 /* スクロールバーの色 */
 .section::-webkit-scrollbar-thumb {
-  background: #555555;
+  background: #6ec9e8;
 }
 
 .section-enter-active, .section-leave-active {
