@@ -45,7 +45,7 @@ export default {
       isLoading: false,
     }
   },
-  beforeCreate() {
+  created() {
     this.doLoading()
   },
   methods: {
@@ -53,7 +53,7 @@ export default {
       this.isLoading = true
       setTimeout(() => {
         this.isLoading = false
-      }, 2000)
+      }, 1000)
     }
   }
 }
