@@ -1,12 +1,14 @@
 <template>
   <transition name="section">
     <div class="section-overlay">
+      <img class="section-parts-l" src="../assets/img/img_sf_parts1.svg" alt="">
       <div class="section">
         <!-- propsで渡してArticleを切り替えすること -->
         <div class="text-layout" v-bind:is="articleID"></div>
         <!-- current^=1 排他的論理和（違う方を返す演算子） -->
         <!-- メモ：<button v-on:click="current^=1">toggle</button> -->
       </div>
+      <img class="section-parts-r" src="../assets/img/img_sf_parts1.svg" alt="">
     </div>
   </transition>
 </template>
@@ -44,6 +46,34 @@ export default {
   background: rgba(0, 0, 0, 0.5);
 }
 
+/* SFっぽい装飾 */
+.section-parts-l {
+  z-index: 60;
+  position: fixed;
+  top: 10%;
+  left: 3%;
+  width: 4em;
+}
+
+.section-parts-r {
+  z-index: 60;
+  position: fixed;
+  bottom: 10%;
+  right: 3%;
+  width: 4em;
+  transform: scale(-1, -1);
+}
+
+@media all and (min-width: 768px) {
+  .section-parts-l {
+    width: 8em;
+  }
+
+  .section-parts-r {
+    width: 8em;
+  }
+}
+
 /* スクロール有コンテンツ */
 .section {
   position: fixed;
@@ -54,12 +84,9 @@ export default {
   width: 90%;
   height: 80vh;
   margin: auto;
-  background: rgba(0, 0, 0, .9);
-  /*background-image: url("../assets/img/img_gui_sp.png");*/
-  /*background-position: center center;*/
-  /*background-attachment: fixed;*/
-  /*background-repeat: no-repeat;*/
-  /*background-size: auto;*/
+  background: rgba(13, 40, 46, .9);
+  border: 2px solid rgba(110, 201, 232, .6);
+  box-shadow: 0px 0px 8px 3px #6ec9e8 inset;
 }
 
 /* スクロールバーの横幅指定 */

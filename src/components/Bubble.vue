@@ -51,7 +51,14 @@ export default {
     this.pixiApp.ticker.add((delta) => {
       this.animate(delta)
     })
-
+    //開いているときはアニメーション止める（処理落ち防止）
+    this.$store.subscribe((mutation) => {
+      if (mutation.type === 'openSection') {
+        this.pixiApp.ticker.stop()
+      } else {
+        this.pixiApp.ticker.start()
+      }
+    })
   },
   destroyed() {
     this.$refs

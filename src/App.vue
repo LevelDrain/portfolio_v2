@@ -97,8 +97,6 @@ export default {
 }
 
 /* モバイルの背景 */
-/* TODO:背景制作予定 */
-
 .main-bg {
   z-index: -10;
   position: fixed;

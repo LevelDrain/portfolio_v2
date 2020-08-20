@@ -41,6 +41,10 @@ export default {
   margin: auto 1em;
 }
 
+.close-button:hover {
+  filter: drop-shadow(0 0 3px #6ec9e8);
+}
+
 .navbar {
   padding: .5rem 1rem;
 }
