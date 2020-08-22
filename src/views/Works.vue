@@ -1,22 +1,47 @@
 <template>
   <div class="container-fluid">
     <div class="main-menu">
-      <div class="main-menu-inner">
-        <h2>準備中</h2>
-        <p><a href="https://leveldrain.sumomo.ne.jp/Portfolio/works/" target="_blank">☞ 過去作品はこちらからどうぞ</a></p>
-      </div>
+      <Modal2 :value="articleShow">
+        <p>中身</p>
+        <div class="main-menu-inner">
+          <h2>準備中</h2>
+          <p><a href="https://leveldrain.sumomo.ne.jp/Portfolio/works/" target="_blank">☞ 過去作品はこちらからどうぞ</a></p>
+        </div>
+      </Modal2>
     </div>
+    <p @click="open">おすべし</p>
+    <p @click="open">おすべし</p>
+    <p @click="open">おすべし</p>
+    <p @click="open">おすべし</p>
+    <p @click="open">おすべし</p>
+    <p @click="open">おすべし</p>
+    <p @click="open">おすべし</p>
+    <p @click="open">おすべし</p>
   </div>
 </template>
 
 <script>
+import Modal2 from '@/components/Modal2'
+
 export default {
   name: 'Works',
-  components: {},
+  components: {
+    Modal2
+  },
+  data() {
+    return {
+      articleShow: false
+    }
+  },
   created() {
     if (this.$route.path === '/works') {
       this.$store.state.inWork = false
       this.$store.state.inHome = true
+    }
+  },
+  methods:{
+    open(){
+      this.articleShow=true
     }
   }
 }
@@ -29,7 +54,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8)
+  /*background: rgba(0, 0, 0, 0.8)*/
 }
 
 .main-menu-inner {

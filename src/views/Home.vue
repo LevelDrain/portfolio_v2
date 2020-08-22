@@ -23,7 +23,7 @@ import Modal from '@/components/Modal.vue'
 export default {
   name: 'Home',
   components: {
-    Modal,
+    Modal
   },
   data() {
     return {
