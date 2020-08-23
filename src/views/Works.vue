@@ -1,22 +1,13 @@
 <template>
   <div class="container-fluid">
     <div class="main-menu">
-      <Modal2 :value="articleShow">
-        <p>中身</p>
-        <div class="main-menu-inner">
-          <h2>準備中</h2>
-          <p><a href="https://leveldrain.sumomo.ne.jp/Portfolio/works/" target="_blank">☞ 過去作品はこちらからどうぞ</a></p>
-        </div>
+      <Modal2 :value.sync="showArticle">
+        <br><br><br><br><br>
+        <p :value.sync="showArticle" :id="id">記事 子コンポーネント</p>
       </Modal2>
+      <br><br><br><br><br>
+      <button @click="openModal()">開ける</button>
     </div>
-    <p @click="open">おすべし</p>
-    <p @click="open">おすべし</p>
-    <p @click="open">おすべし</p>
-    <p @click="open">おすべし</p>
-    <p @click="open">おすべし</p>
-    <p @click="open">おすべし</p>
-    <p @click="open">おすべし</p>
-    <p @click="open">おすべし</p>
   </div>
 </template>
 
@@ -30,7 +21,8 @@ export default {
   },
   data() {
     return {
-      articleShow: false
+      id: "testId01",
+      showArticle: false
     }
   },
   created() {
@@ -39,9 +31,9 @@ export default {
       this.$store.state.inHome = true
     }
   },
-  methods:{
-    open(){
-      this.articleShow=true
+  methods: {
+    openModal() {
+      this.showArticle = true
     }
   }
 }
