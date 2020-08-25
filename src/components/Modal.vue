@@ -104,6 +104,7 @@ export default {
   background: #6ec9e8;
 }
 
+/* アニメーション */
 .section-enter-active, .section-leave-active {
   transition: opacity .5s;
 }

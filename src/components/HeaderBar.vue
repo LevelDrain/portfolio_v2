@@ -39,10 +39,17 @@ export default {
   width: 2em;
   height: 2em;
   margin: auto 1em;
+  animation: shadow 3s infinite alternate;
 }
 
-.close-button:hover {
-  filter: drop-shadow(0 0 3px #6ec9e8);
+@keyframes shadow {
+  0% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 3px #6ec9e8);
+  }
 }
 
 .navbar {

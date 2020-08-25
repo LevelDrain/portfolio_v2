@@ -3,11 +3,25 @@
 <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.8;}
-	.st1{fill:#6EC9E8;}
-	.st2{opacity:0.4;}
-	.st3{fill:none;stroke:#6EC9E8;stroke-width:2;stroke-miterlimit:10;}
-	.st4{fill:none;stroke:#6EC9E8;stroke-width:3;stroke-miterlimit:10;}
+	.st0{/*opacity:0.8;*/
+	animation: flashing-ui 5s infinite alternate;}
+	.st1{fill:#6EC9E8;
+	animation: flashing-ui 5s infinite alternate;}
+	.st2{/*opacity:0.4;*/
+	animation: flashing-ui 5s infinite alternate;}
+	.st3{fill:none;/*stroke:#6EC9E8;*/stroke-width:2;stroke-miterlimit:10;
+	animation: moving-line 5s infinite alternate;}
+	.st4{fill:none;/*stroke:#6EC9E8;*/stroke-width:3;stroke-miterlimit:10;
+	animation: moving-line 5s infinite alternate;}
+	@keyframes flashing-ui {
+	0% {opacity: .1;}
+  	100% {opacity: .4;}
+	}
+	@keyframes moving-line{
+	0%{stroke:rgba(110, 201, 232, 0.3);stroke-dasharray: 500; stroke-dashoffset : 500;}
+	100%{stroke:rgba(110, 201, 232, 0.8);stroke-dashoffset : 0;}
+	}
+
 </style>
 <g class="st0">
 	<rect x="0.5" y="0.5" class="st1" width="45" height="45"/>
