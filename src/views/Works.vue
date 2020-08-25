@@ -1,12 +1,13 @@
 <template>
   <div class="container-fluid">
     <div class="main-menu">
-      <Modal2 :value.sync="showArticle">
+      <!--      <p>showArticle = {{showArticle}}</p>-->
+      <Modal2 v-model="dialog">
         <br><br><br><br><br>
-        <p :value.sync="showArticle" :id="id">記事 子コンポーネント</p>
+        <p>記事 子コンポーネント</p>
       </Modal2>
       <br><br><br><br><br>
-      <button @click="openModal()">開ける</button>
+      <button @click="open">開ける</button>
     </div>
   </div>
 </template>
@@ -22,7 +23,7 @@ export default {
   data() {
     return {
       id: "testId01",
-      showArticle: false
+      dialog: false
     }
   },
   created() {
@@ -32,10 +33,10 @@ export default {
     }
   },
   methods: {
-    openModal() {
-      this.showArticle = true
-    }
-  }
+    open() {
+      this.dialog = true
+    },
+  },
 }
 </script>
 
