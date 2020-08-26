@@ -5,30 +5,45 @@
       <div class="main-menu-inner">
         <!-- 本文枠 -->
         <div class="main-menu-content">
-          <div class="main-menu-back">
-            <p>We might be actually a brain hooked up to a computer program that can perfectly simulate experiences
-              of
-              the
-              outside world. </p>
-            <p>…… So I wanna be an ARTISAN for human brains.</p>
-          </div>
-
           <div class="main-menu-front pc-hide">
             <ul>
-              <li class="button" @click="open('article1')">LEVEL1：スキルについて</li>
-              <li class="button" @click="open('article2')">LEVEL2：自己紹介</li>
-              <li class="button">LEVEL3：本ポートフォリオについて</li>
-              <li class="button">LEVEL4：上島様名言集</li>
+              <li class="button" @click="open('article1')">
+                <span class="btn-accessory">LEVEL1</span>Skills & Works
+              </li>
+              <li class="button" @click="open('article2')">
+                <span class="btn-accessory">LEVEL2</span>Creator Profile
+              </li>
+              <li class="button">
+                <span class="btn-accessory">LEVEL3</span>About My Portfolio
+              </li>
+              <li class="button">
+                <span class="btn-accessory">LEVEL4</span>上島様名言集
+              </li>
             </ul>
           </div>
 
           <div class="main-menu-front sp-hide">
             <ul>
-              <li class="button" @click="open('article1')">LEVEL1：<br>スキルについて</li>
-              <li class="button" @click="open('article2')">LEVEL2：<br>自己紹介</li>
-              <li class="button">LEVEL3：<br>本ポートフォリオについて</li>
-              <li class="button">LEVEL4：上島様名言集</li>
+              <li class="button" @click="open('article1')">
+                <span class="btn-accessory">LEVEL1</span><br>Skills & Works
+              </li>
+              <li class="button" @click="open('article2')">
+                <span class="btn-accessory">LEVEL2</span><br>Creator Profile
+              </li>
+              <li class="button">
+                <span class="btn-accessory">LEVEL3</span><br>About My Portfolio
+              </li>
+              <li class="button">
+                <span class="btn-accessory">LEVEL4</span><br>上島様名言集
+              </li>
             </ul>
+          </div>
+
+          <div class="main-menu-back">
+            <p class="btn-accessory">We might be actually a brain hooked up to a computer program that can perfectly
+              simulate experiences
+              of the outside world. </p>
+            <p class="btn-accessory">…… So I wanna be an ARTISAN for human brains.</p>
           </div>
         </div>
         <!-- //本文枠 -->
@@ -167,10 +182,16 @@ export default {
   }
 }
 
+.btn-accessory {
+  color: #6ec9e8;
+  padding-right: 2em;
+  filter: drop-shadow(0 0 0.5em rgba(110, 201, 232, .8));
+}
+
 .main-menu-content {
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -179,25 +200,19 @@ export default {
 
 /* コンテンツ */
 .main-menu-back {
-  position: absolute;
-  top: 50%;
-  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 90%;
   padding: 3em;
-  margin: 5em 0;
+  margin: 3em 0;
   color: rgba(110, 201, 232, .6);
   background: rgba(13, 40, 46, .5);
-  box-shadow: 0px 0px 8px 3px #6ec9e8 inset;
+  box-shadow: 0 0 8px 3px #6ec9e8 inset;
 }
 
 .main-menu-front {
-  position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,7 +221,7 @@ export default {
   width: 90%;
   padding: 1em;
   background: rgba(13, 40, 46, .5);
-  box-shadow: 0px 0px 8px 3px #6ec9e8 inset;
+  box-shadow: 0 0 8px 3px #6ec9e8 inset;
 }
 
 .main-menu-front ul {
@@ -219,34 +234,22 @@ export default {
 
 @media all and (min-width: 769px) {
   .main-menu-back {
+    z-index: 5;
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 30em;
-    padding: 3em;
-    margin: 10em 0;
-    color: rgba(110, 201, 232, .6);
-    background: rgba(13, 40, 46, .5);
-    box-shadow: 0px 0px 8px 3px #6ec9e8 inset;
   }
 
   .main-menu-front {
+    z-index: 10;
     position: absolute;
     top: 0;
     left: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+    display: block;
     width: 30em;
-    padding: 3em;
     background: rgba(13, 40, 46, .5);
-    box-shadow: 0px 0px 8px 3px #6ec9e8 inset;
+    box-shadow: 0 0 8px 3px #6ec9e8 inset;
   }
 
   .main-menu-front ul {
