@@ -16,6 +16,10 @@
           :opacity=1
       />
       <BubbleEffect class="canvas-bg"/>
+      <div class="animation-bg-wrap">
+        <img class="animation-bg" src="./assets/img/img_sf_parts2.svg" alt="">
+      </div>
+
       <main id="Main" role="main">
         <router-view/>
       </main>
@@ -75,6 +79,15 @@ export default {
 
 .canvas-bg {
   z-index: -5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.animation-bg {
+  z-index: -3;
   position: fixed;
   top: 0;
   left: 0;
