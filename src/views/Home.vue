@@ -18,6 +18,7 @@
               <li class="button" @click="open('article1')">LEVEL1：スキルについて</li>
               <li class="button" @click="open('article2')">LEVEL2：自己紹介</li>
               <li class="button">LEVEL3：本ポートフォリオについて</li>
+              <li class="button">LEVEL4：上島様名言集</li>
             </ul>
           </div>
 
@@ -26,6 +27,7 @@
               <li class="button" @click="open('article1')">LEVEL1：<br>スキルについて</li>
               <li class="button" @click="open('article2')">LEVEL2：<br>自己紹介</li>
               <li class="button">LEVEL3：<br>本ポートフォリオについて</li>
+              <li class="button">LEVEL4：上島様名言集</li>
             </ul>
           </div>
         </div>
