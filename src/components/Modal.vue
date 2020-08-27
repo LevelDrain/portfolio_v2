@@ -1,5 +1,5 @@
 <template>
-  <transition name="section">
+  <transition name="section" v-cloak>
     <div class="section-overlay">
       <img class="section-parts-l" src="../assets/img/img_sf_parts1.svg" alt="">
       <div class="section">
@@ -44,6 +44,7 @@ export default {
   width: auto;
   height: auto;
   background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
 }
 
 /* SFっぽい装飾 */
@@ -86,7 +87,7 @@ export default {
   margin: auto;
   background: rgba(13, 40, 46, .9);
   border: 2px solid rgba(110, 201, 232, .6);
-  box-shadow: 0px 0px 8px 3px #6ec9e8 inset;
+  box-shadow: 0 0 8px 3px #6ec9e8 inset;
 }
 
 /* スクロールバーの横幅指定 */
@@ -96,7 +97,7 @@ export default {
 
 /* スクロールバーの背景色 */
 .section::-webkit-scrollbar-track {
-  background: #2b4c5a;
+  background: rgba(13, 40, 46, .9);
 }
 
 /* スクロールバーの色 */

@@ -1,0 +1,89 @@
+/* コンテナのデザイン */
+.article-inner {
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    /*background-color: #333333;*/
+    padding: 3% 10%;
+}
+
+.article-container p {
+    font-size: 14px;
+}
+
+@media all and (min-width: 768px) {
+    .article-container p {
+        font-size: 16px;
+    }
+}
+
+/* 見出しデザイン */
+.headline {
+    position: relative;
+    font-weight: normal;
+    font-size: 1.5em;
+    text-align: center;
+    display: inline-block;
+    margin: 1em 0;
+    color: #6ec9e8;
+    filter: drop-shadow(0 0 3px #6ec9e8);
+}
+
+.headline::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    display: block;
+    height: 1.3em;
+    width: 1.3em;
+    border: solid 1px #6ec9e8;
+    margin: auto;
+}
+
+.headline::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    right: -15%;
+    display: block;
+    height: .8em;
+    width: .8em;
+    border: solid 1px #6ec9e8;
+    margin: auto;
+}
+
+/* アルバムデザイン（bootstrapをベースにする） */
+.card-container {
+    width: 50%;
+    color: #6ec9e8;
+    margin: 0 auto;
+}
+
+.card-container:hover {
+    color: #6ec9e8;
+    text-decoration: none;
+}
+
+.card-origin {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: rgba(13, 40, 46, .9);
+    border: solid 1px #6ec9e8;
+    border-radius: .25rem;
+}
+
+.thumbnail {
+    display: block;
+    width: 100%;
+    border-bottom: solid 1px #6ec9e8;
+}

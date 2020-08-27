@@ -17,7 +17,7 @@
       />
       <BubbleEffect class="canvas-bg"/>
       <div class="animation-bg-wrap">
-        <img class="animation-bg" src="./assets/img/img_sf_parts2.svg" alt="">
+        <img class="animation-bg" src="./assets/img/img_sf_parts2.svg" alt="" v-if="!this.$store.state.showSection">
       </div>
 
       <main id="Main" role="main">
