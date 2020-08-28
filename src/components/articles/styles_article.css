@@ -34,6 +34,8 @@
     margin: 1em 0;
     color: #6ec9e8;
     filter: drop-shadow(0 0 3px #6ec9e8);
+    padding-bottom: .3em;
+    border-bottom: solid 1px #6ec9e8;
 }
 
 .headline::before {
@@ -52,7 +54,7 @@
     content: '';
     position: absolute;
     bottom: -20%;
-    right: -15%;
+    right: -20%;
     display: block;
     height: .8em;
     width: .8em;

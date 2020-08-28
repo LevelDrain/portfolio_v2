@@ -9,6 +9,11 @@
         Photoshop などのレタッチソフトでイラストを描くのが趣味。
       </p>
 
+      <h3 class="headline">Web Direction</h3>
+      <p>アダルト系ソーシャルゲームの真面目なディレクションを2年ほど行う。<br>
+        レベルデザイン（ゲームのUX調整）、UIおよび広告サイトの仕様書などを手掛ける。
+      </p>
+
       <h3 class="headline">Frontend</h3>
       <p>JavaScript / Vue.js / jQuery / Pixi.js, Three.jsなどのWebGL系ライブラリ<br>
         Sassやbootstrapを使用した開発経験もあるが、CSSの方が個人的に好み。
