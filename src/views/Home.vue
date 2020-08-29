@@ -83,6 +83,10 @@ export default {
 
 <style scoped>
 .main-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 1000px;
   /*background: #333333;*/
@@ -91,10 +95,6 @@ export default {
 .main-menu-inner {
   position: fixed;
   top: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
   width: 100%;
   height: 90%;
   /*background: #333333;*/
