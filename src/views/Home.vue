@@ -184,13 +184,24 @@ export default {
 }
 
 .main-menu-content {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 900px;
   /*background: #333333;*/
+}
+
+@media all and (min-width: 769px) {
+  .main-menu-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /*background: #333333;*/
+  }
 }
 
 /* コンテンツ */
