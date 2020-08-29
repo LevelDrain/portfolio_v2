@@ -274,6 +274,7 @@ export default {
   align-items: center;
   text-align: left;
   width: 90%;
+  height: 450px;
   padding: 1em;
   background: rgba(13, 40, 46, .5);
   -webkit-box-shadow: 0 0 8px 3px #6ec9e8 inset;
