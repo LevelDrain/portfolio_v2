@@ -94,7 +94,7 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  height: 800px;
+  height: 1000px;
   /*background: #333333;*/
 }
 
@@ -117,7 +117,8 @@ export default {
   -ms-flex-align: start;
   align-items: start;
   width: 100%;
-  height: 90%;
+  min-height: 500px;
+  height: 90vh;
   /*background: #333333;*/
 }
 
