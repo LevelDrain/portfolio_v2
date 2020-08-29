@@ -130,7 +130,7 @@ export default {
 
 /* メニューの位置調整 */
 .main-menu-inner {
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   padding: 10% 5%;
 }
