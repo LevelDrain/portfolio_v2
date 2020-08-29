@@ -120,7 +120,7 @@ export default {
   -ms-flex-align: start;
   align-items: start;
   width: 100%;
-  height: 85vh;
+  height: 90%;
   /*background: #333333;*/
 }
 
