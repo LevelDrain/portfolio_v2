@@ -82,6 +82,13 @@ export default {
 </script>
 
 <style scoped>
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .main-menu {
   position: fixed;
   top: 0;
@@ -94,11 +101,23 @@ export default {
 .main-menu-inner {
   position: fixed;
   top: 10%;
+  -webkit-transform: translateZ(0);
   transform: translateZ(0);
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: start;
   width: 100%;
   height: 85vh;
@@ -140,6 +159,8 @@ export default {
   width: 20%;
   height: 20%;
   border: .1em solid;
+  -webkit-transition: all .6s ease;
+  -o-transition: all .6s ease;
   transition: all .6s ease;
 }
 
@@ -171,6 +192,17 @@ export default {
   height: 100%;
 }
 
+@-webkit-keyframes button-animation {
+  100% {
+    border-bottom-color: #6ec9e8;
+    border-right-color: #6ec9e8;
+    border-top-color: #6ec9e8;
+    border-left-color: #6ec9e8;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @keyframes button-animation {
   100% {
     border-bottom-color: #6ec9e8;
@@ -185,13 +217,21 @@ export default {
 .btn-accessory {
   color: #6ec9e8;
   padding-right: 2em;
+  -webkit-filter: drop-shadow(0 0 0.5em rgba(110, 201, 232, .8));
   filter: drop-shadow(0 0 0.5em rgba(110, 201, 232, .8));
 }
 
 .main-menu-content {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -200,31 +240,52 @@ export default {
 
 /* コンテンツ */
 .main-menu-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 90%;
   padding: 3em;
   margin: 3em 0;
   color: rgba(110, 201, 232, .6);
   background: rgba(13, 40, 46, .5);
+  -webkit-box-shadow: 0 0 8px 3px #6ec9e8 inset;
   box-shadow: 0 0 8px 3px #6ec9e8 inset;
 }
 
 .main-menu-front {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: left;
   width: 90%;
   padding: 1em;
   background: rgba(13, 40, 46, .5);
+  -webkit-box-shadow: 0 0 8px 3px #6ec9e8 inset;
   box-shadow: 0 0 8px 3px #6ec9e8 inset;
 }
 
 .main-menu-front ul {
+  -webkit-padding-start: 0;
   padding-inline-start: 0;
 }
 
@@ -249,10 +310,12 @@ export default {
     display: block;
     width: 30em;
     background: rgba(13, 40, 46, .5);
+    -webkit-box-shadow: 0 0 8px 3px #6ec9e8 inset;
     box-shadow: 0 0 8px 3px #6ec9e8 inset;
   }
 
   .main-menu-front ul {
+    -webkit-padding-start: 0;
     padding-inline-start: 0;
   }
 

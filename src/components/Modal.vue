@@ -28,6 +28,13 @@ export default {
 </script>
 
 <style scoped>
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* オーバーレイデザイン */
 .section-overlay {
   z-index: 50;
@@ -35,15 +42,25 @@ export default {
   bottom: 0;
   left: 0;
 
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
   background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 }
 
@@ -62,6 +79,8 @@ export default {
   bottom: 10%;
   right: 3%;
   width: 4em;
+  -webkit-transform: scale(-1, -1);
+  -ms-transform: scale(-1, -1);
   transform: scale(-1, -1);
 }
 
@@ -81,12 +100,14 @@ export default {
   top: 12%;
   overflow-y: scroll;
   overflow-x: hidden;
+  -webkit-transform: translateZ(0);
   transform: translateZ(0);
   width: 90%;
   height: 80vh;
   margin: auto;
   background: rgba(13, 40, 46, .9);
   border: 2px solid rgba(110, 201, 232, .6);
+  -webkit-box-shadow: 0 0 8px 3px #6ec9e8 inset;
   box-shadow: 0 0 8px 3px #6ec9e8 inset;
 }
 

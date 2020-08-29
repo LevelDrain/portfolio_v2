@@ -80,11 +80,6 @@ export default {
         }
       }
       this.pixiApp.renderer.render(this.pixiApp.stage)
-
-      //今回はpixi.jsのtickerで毎フレーム呼び出す
-      // setTimeout(() => {
-      //     requestAnimationFrame(this.animate)
-      // }, 1000 / 50)
     }
   }
 }

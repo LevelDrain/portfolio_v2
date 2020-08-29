@@ -25,6 +25,13 @@ export default {
 </script>
 
 <style scoped>
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .nav-color {
   background: rgba(0, 0, 0, .7);
 }
@@ -39,7 +46,19 @@ export default {
   width: 2em;
   height: 2em;
   margin: auto 1em;
+  -webkit-animation: shadow 3s infinite alternate;
   animation: shadow 3s infinite alternate;
+}
+
+@-webkit-keyframes shadow {
+  0% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: drop-shadow(0 0 3px #6ec9e8);
+    filter: drop-shadow(0 0 3px #6ec9e8);
+  }
 }
 
 @keyframes shadow {
@@ -48,6 +67,7 @@ export default {
   }
   100% {
     opacity: 1;
+    -webkit-filter: drop-shadow(0 0 3px #6ec9e8);
     filter: drop-shadow(0 0 3px #6ec9e8);
   }
 }
