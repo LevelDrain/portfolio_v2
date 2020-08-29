@@ -103,11 +103,8 @@ export default {
   top: 10%;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -233,8 +230,6 @@ export default {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
   /*background: #333333;*/
 }
 
