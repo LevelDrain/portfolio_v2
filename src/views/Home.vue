@@ -117,7 +117,8 @@ export default {
   -ms-flex-align: start;
   align-items: start;
   width: 100%;
-  height: 90%;
+  /*height: 90%;*/
+  height: 750px;
   /*background: #333333;*/
 }
 
