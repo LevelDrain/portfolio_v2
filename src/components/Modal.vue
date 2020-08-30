@@ -83,7 +83,7 @@ export default {
   overflow-x: hidden;
   transform: translateZ(0);
   width: 90%;
-  height: 80vh;
+  height: 85%;
   margin: auto;
   background: rgba(13, 40, 46, .9);
   border: 2px solid rgba(110, 201, 232, .6);
