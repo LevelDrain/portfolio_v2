@@ -107,9 +107,6 @@
 </template>
 
 <script>
-import 'normalize.css'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './styles_article.css'
 
 export default {
