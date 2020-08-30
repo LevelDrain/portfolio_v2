@@ -65,12 +65,6 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=PT+Serif&display=swap');
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 
 #app {
   font-family: 'PT Serif', 'Noto Serif JP', serif;

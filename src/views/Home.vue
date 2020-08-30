@@ -106,7 +106,7 @@ export default {
 
 /* メニューの位置調整 */
 .main-menu-inner {
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   padding: 10% 5%;
 }
