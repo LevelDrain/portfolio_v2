@@ -13,10 +13,10 @@
               <li class="button" @click="open('article2')">
                 <span class="btn-accessory">LEVEL2</span>Creator Profile
               </li>
-              <li class="button">
-                <span class="btn-accessory">LEVEL3</span>About My Portfolio
+              <li class="button" @click="open('article3')">
+                <span class="btn-accessory">LEVEL3</span>About This Portfolio
               </li>
-              <li class="button">
+              <li class="button" @click="open('article4')">
                 <span class="btn-accessory">LEVEL4</span>上島様名言集
               </li>
             </ul>
@@ -30,10 +30,10 @@
               <li class="button" @click="open('article2')">
                 <span class="btn-accessory">LEVEL2</span><br>Creator Profile
               </li>
-              <li class="button">
-                <span class="btn-accessory">LEVEL3</span><br>About My Portfolio
+              <li class="button" @click="open('article3')">
+                <span class="btn-accessory">LEVEL3</span><br>About This Portfolio
               </li>
-              <li class="button">
+              <li class="button" @click="open('article4')">
                 <span class="btn-accessory">LEVEL4</span><br>上島様名言集
               </li>
             </ul>
@@ -43,7 +43,7 @@
             <p class="btn-accessory">We might be actually a brain hooked up to a computer program that can perfectly
               simulate experiences
               of the outside world. </p>
-            <p class="btn-accessory">…… So I wanna be an ARTISAN for human brains.</p>
+            <p class="btn-accessory">…… So I wanna be an ARTISAN for human emotions.</p>
           </div>
         </div>
         <!-- //本文枠 -->
@@ -180,6 +180,7 @@ export default {
 .btn-accessory {
   color: #6ec9e8;
   padding-right: 2em;
+  text-align: left;
   filter: drop-shadow(0 0 0.5em rgba(110, 201, 232, .8));
 }
 

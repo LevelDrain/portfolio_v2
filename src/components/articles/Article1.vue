@@ -20,7 +20,7 @@
         <a href="https://www.slideshare.net/YukiSamuraki/ss-212325102" target="_blank"
            class="card-container">
           <div class="card-origin">
-            <img class="card-img-top thumbnail" src="./img_social_game.jpg" alt="">
+            <img class="card-img-top thumbnail" src="./img/img_social_game.jpg" alt="">
             <div class="card-body">
               <div class="card-text">
                 <p>LT登壇資料<br>
@@ -32,41 +32,18 @@
 
         <a href="https://leveldrain.sumomo.ne.jp/Portfolio/FEIF_calc.xlsx" target="_blank" class="card-container">
           <div class="card-origin">
-            <img class="card-img-top thumbnail" src="./img_level_design.jpg" alt="">
+            <img class="card-img-top thumbnail" src="./img/img_level_design.jpg" alt="">
             <div class="card-body">
               <div class="card-text">
                 <p>Excel<br>
-                  自作レベルデザインツール</p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://leveldrain.sumomo.ne.jp/Portfolio/FEIF_calc.xlsx" target="_blank" class="card-container">
-          <div class="card-origin">
-            <img class="card-img-top thumbnail" src="./img_level_design.jpg" alt="">
-            <div class="card-body">
-              <div class="card-text">
-                <p>ディレクション<br>
-                  初代ポ〇モンバトル（仕様書）</p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://leveldrain.sumomo.ne.jp/Portfolio/FEIF_calc.xlsx" target="_blank" class="card-container">
-          <div class="card-origin">
-            <img class="card-img-top thumbnail" src="./img_level_design.jpg" alt="">
-            <div class="card-body">
-              <div class="card-text">
-                <p>JavaScript(ES5)<br>
-                  初代ポ〇モンバトル（ゲーム本体）</p>
+                  自作レベルデザインツール<br>
+                  ※ クリックでExcelファイルをダウンロードできます
+                </p>
               </div>
             </div>
           </div>
         </a>
       </div>
-
 
       <h3 class="headline">Frontend</h3>
       <p>JavaScript / Vue.js (Vue Router, Vuexを含む) / jQuery / Pixi.js, Three.js などのWebGL系ライブラリ<br>
@@ -79,7 +56,7 @@
         <a href="https://leveldrain.sumomo.ne.jp/WebEffectGenerator/geostorm.html" target="_blank"
            class="card-container">
           <div class="card-origin">
-            <img class="card-img-top thumbnail" src="./img_work_geostorm.jpg" alt="">
+            <img class="card-img-top thumbnail" src="./img/img_work_geostorm.jpg" alt="">
             <div class="card-body">
               <div class="card-text">
                 <p>JavaScript / Three.js<br>
@@ -91,7 +68,7 @@
 
         <router-link to="/" class="card-container">
           <div class="card-origin">
-            <img class="card-img-top thumbnail" src="./img_portfolio2.jpg" alt="">
+            <img class="card-img-top thumbnail" src="./img/img_portfolio2.jpg" alt="">
             <div class="card-body">
               <div class="card-text">
                 <p>Vue.js / Pixi.js<br>
@@ -102,6 +79,38 @@
         </router-link>
       </div>
 
+      <h3 class="headline">Web Direction + Frontend</h3>
+      <p>JavaScriptによる初作品。<br>
+        コードはあまりキレイではないものの、仕様書は冴えている。</p>
+
+      <div class="thumbnail-box">
+        <a href="https://leveldrain.sumomo.ne.jp/PokemonButtleJS/Specification.xlsx" class="card-container">
+          <div class="card-origin">
+            <img class="card-img-top thumbnail" src="./img/img_pokemon_js.jpg" alt="">
+            <div class="card-body">
+              <div class="card-text">
+                <p>Excel<br>
+                  初代ポ〇モンバトル（仕様書）<br>
+                  ※ クリックでExcelファイルをダウンロードできます
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://leveldrain.sumomo.ne.jp/PokemonButtleJS/" target="_blank" class="card-container">
+          <div class="card-origin">
+            <img class="card-img-top thumbnail" src="./img/img_pokemon_excel.jpg" alt="">
+            <div class="card-body">
+              <div class="card-text">
+                <p>JavaScript(ES5)<br>
+                  初代ポ〇モンバトル（ゲーム本体）</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
       <h3 class="headline">Serverside</h3>
       <p>Blade に Vue.js を突っ込んだり、CRUD の実装をしたりする。<br>
         生の PHP の経験は学生時代からあり、Laravel より若干長い。</p>
@@ -110,7 +119,7 @@
         <a href="https://leveldrain.sumomo.ne.jp/beginnernovels/" target="_blank"
            class="card-container">
           <div class="card-origin">
-            <img class="card-img-top thumbnail" src="./img_visual_novel.jpg" alt="">
+            <img class="card-img-top thumbnail" src="./img/img_visual_novel.jpg" alt="">
             <div class="card-body">
               <div class="card-text">
                 <p>PHP<br>

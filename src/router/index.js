@@ -10,14 +10,17 @@ const routes = [
         name: 'Home',
         component: Home
     },
-    {
-        path: '/works',
-        name: 'Works',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ '../views/Works.vue')
-    },
+    //{
+        /* * route level code-splitting
+        * this generates a separate chunk (about.[hash].js) for this route
+        * which is lazy-loaded when the route is visited.
+        * */
+
+        //実装完了まで廃止
+        //path: '/works',
+        //name: 'Works',
+        //component: () => import(/* webpackChunkName: "about" */ '../views/Works.vue')
+    //},
 ]
 
 const router = new VueRouter({

@@ -16,12 +16,16 @@
 <script>
 import Article1 from "@/components/articles/Article1";
 import Article2 from "@/components/articles/Article2";
+import Article3 from "@/components/articles/Article3";
+import Article4 from "@/components/articles/Article4";
 
 export default {
   name: "Modal",
   components: {
     'article1': Article1,
     'article2': Article2,
+    'article3': Article3,
+    'article4': Article4,
   },
   props: ['articleID'],
 }
