@@ -16,90 +16,109 @@
         気になる方はご連絡ください。
       </p>
 
-      <div class="container">
-        <div class="row">
-          <a href="https://www.slideshare.net/YukiSamuraki/ss-212325102" target="_blank"
-             class="card-container col-md-6">
-            <div class="card-origin mb-4 shadow">
-              <img class="card-img-top thumbnail" src="./img_social_game.jpg" alt="">
-              <div class="card-body">
-                <div class="card-text">
-                  <p>制作例<br>
-                    ソシャゲの UX について（LT登壇）</p>
-                </div>
+      <div class="thumbnail-box">
+        <a href="https://www.slideshare.net/YukiSamuraki/ss-212325102" target="_blank"
+           class="card-container">
+          <div class="card-origin">
+            <img class="card-img-top thumbnail" src="./img_social_game.jpg" alt="">
+            <div class="card-body">
+              <div class="card-text">
+                <p>LT登壇資料<br>
+                  ソシャゲの UX について</p>
               </div>
             </div>
-          </a>
+          </div>
+        </a>
 
-          <a href="https://leveldrain.sumomo.ne.jp/Portfolio/FEIF_calc.xlsx" class="card-container col-md-6">
-            <div class="card-origin mb-4 shadow">
-              <img class="card-img-top thumbnail" src="./img_level_design.jpg" alt="">
-              <div class="card-body">
-                <div class="card-text">
-                  <p>制作例<br>
-                    自作レベルデザインツール（Excel）</p>
-                </div>
+        <a href="https://leveldrain.sumomo.ne.jp/Portfolio/FEIF_calc.xlsx" target="_blank" class="card-container">
+          <div class="card-origin">
+            <img class="card-img-top thumbnail" src="./img_level_design.jpg" alt="">
+            <div class="card-body">
+              <div class="card-text">
+                <p>Excel<br>
+                  自作レベルデザインツール</p>
               </div>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
+
+        <a href="https://leveldrain.sumomo.ne.jp/Portfolio/FEIF_calc.xlsx" target="_blank" class="card-container">
+          <div class="card-origin">
+            <img class="card-img-top thumbnail" src="./img_level_design.jpg" alt="">
+            <div class="card-body">
+              <div class="card-text">
+                <p>ディレクション<br>
+                  初代ポ〇モンバトル（仕様書）</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://leveldrain.sumomo.ne.jp/Portfolio/FEIF_calc.xlsx" target="_blank" class="card-container">
+          <div class="card-origin">
+            <img class="card-img-top thumbnail" src="./img_level_design.jpg" alt="">
+            <div class="card-body">
+              <div class="card-text">
+                <p>JavaScript(ES5)<br>
+                  初代ポ〇モンバトル（ゲーム本体）</p>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
 
+
       <h3 class="headline">Frontend</h3>
-      <p>JavaScript / Vue.js / jQuery / Pixi.js, Three.jsなどのWebGL系ライブラリ<br>
+      <p>JavaScript / Vue.js (Vue Router, Vuexを含む) / jQuery / Pixi.js, Three.js などのWebGL系ライブラリ<br>
         Sassやbootstrapを使用した開発経験もあるが、CSSの方が個人的に好み。
       </p>
-      <p>業務で使用しているのは主に Laravel 環境内の Vue.js であり、axiosなどのAPI連携まで実装経験がある。</p>
-      <p>- Three.js による開発は特に燃える。</p>
+      <p>業務で使用しているのは主にLaravel環境内のVue.jsであり、axiosなどのAPI連携まで実装経験がある。</p>
+      <p>- Three.jsによる開発は特に燃える。</p>
 
-      <div class="container">
-        <div class="row">
-          <a href="https://leveldrain.sumomo.ne.jp/WebEffectGenerator/geostorm.html" target="_blank"
-             class="card-container col-md-6">
-            <div class="card-origin mb-4 shadow">
-              <img class="card-img-top thumbnail" src="./img_work_geostorm.jpg" alt="">
-              <div class="card-body">
-                <div class="card-text">
-                  <p>制作例<br>
-                    厨二エフェクトジェネレーター</p>
-                </div>
+      <div class="thumbnail-box">
+        <a href="https://leveldrain.sumomo.ne.jp/WebEffectGenerator/geostorm.html" target="_blank"
+           class="card-container">
+          <div class="card-origin">
+            <img class="card-img-top thumbnail" src="./img_work_geostorm.jpg" alt="">
+            <div class="card-body">
+              <div class="card-text">
+                <p>JavaScript / Three.js<br>
+                  厨二エフェクトジェネレーター</p>
               </div>
             </div>
-          </a>
+          </div>
+        </a>
 
-          <router-link to="/" class="card-container col-md-6">
-            <div class="card-origin mb-4 shadow">
-              <img class="card-img-top thumbnail" src="./img_portfolio2.jpg" alt="">
-              <div class="card-body">
-                <div class="card-text">
-                  <p>制作例<br>
-                    上島研究所（本サイト）</p>
-                </div>
+        <router-link to="/" class="card-container">
+          <div class="card-origin">
+            <img class="card-img-top thumbnail" src="./img_portfolio2.jpg" alt="">
+            <div class="card-body">
+              <div class="card-text">
+                <p>Vue.js / Pixi.js<br>
+                  上島研究所（本サイト）</p>
               </div>
             </div>
-          </router-link>
-        </div>
+          </div>
+        </router-link>
       </div>
 
       <h3 class="headline">Serverside</h3>
       <p>Blade に Vue.js を突っ込んだり、CRUD の実装をしたりする。<br>
         生の PHP の経験は学生時代からあり、Laravel より若干長い。</p>
 
-      <div class="container">
-        <div class="row">
-          <a href="https://leveldrain.sumomo.ne.jp/beginnernovels/" target="_blank"
-             class="card-container col-md-6">
-            <div class="card-origin mb-4 shadow">
-              <img class="card-img-top thumbnail" src="./img_visual_novel.jpg" alt="">
-              <div class="card-body">
-                <div class="card-text">
-                  <p>制作例<br>
-                    Webビジュアルノベルツール</p>
-                </div>
+      <div class="thumbnail-box">
+        <a href="https://leveldrain.sumomo.ne.jp/beginnernovels/" target="_blank"
+           class="card-container">
+          <div class="card-origin">
+            <img class="card-img-top thumbnail" src="./img_visual_novel.jpg" alt="">
+            <div class="card-body">
+              <div class="card-text">
+                <p>PHP<br>
+                  Webビジュアルノベルツール</p>
               </div>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
 
     </div>

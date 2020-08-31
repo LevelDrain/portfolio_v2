@@ -1,24 +1,16 @@
-/* bootstrap上書き */
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+.thumbnail-box {
+    display: grid;
+    gap: 1em;
+    width: calc(100% - 10px);
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    margin: 0 auto 1.5rem;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.col-md-6 {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+@media all and (min-width: 768px) {
+    .thumbnail-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* コンテナのデザイン */
@@ -123,7 +115,7 @@
 
 /* アルバムデザイン（bootstrapをベースにする） */
 .card-container {
-    width: 50%;
+    width: 100%;
     color: #6ec9e8;
     margin: 0 auto;
 }
