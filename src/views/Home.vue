@@ -19,6 +19,11 @@
               <li class="button" @click="open('article4')">
                 <span class="btn-accessory">LEVEL4</span>上島様名言集
               </li>
+
+              <li class="button" @click="open('article4')">
+                <router-link to="/article4" @click="open('article4')">テスト1</router-link>
+                <!-- 必ずpathを変えないと動かない -->
+              </li>
             </ul>
           </div>
 
