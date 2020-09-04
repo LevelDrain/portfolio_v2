@@ -26,6 +26,6 @@
 import './styles_article.css'
 
 export default {
-  name: "Article3",
+  name: "Article4",
 }
 </script>

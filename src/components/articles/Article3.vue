@@ -17,21 +17,27 @@
         モーダルを開いて文章を読む際、泡アニメーションやSVGアニメーションはぶっちゃけ不要である。<br>
         そこで、モーダルを開く度に背景のアニメーションを全てオフにする処理をVuexを介して実装した。</p>
       <p> 下記画像の矢印はモーダルを開くイベントである。処理の量を表すバーが半分程度に減るのが分かる。</p>
-      <p><img src="./img/img_performance.png" alt=""></p>
+      <p><img src="./img/img_performance.png" alt="" width="70%"></p>
 
       <h4 class="headline-lv2">2. モーダル背景のすりガラス</h4>
       <p>1の通り、モーダル展開中は背景のアニメーションを全て止めている。<br>
         しかしながら、開いた瞬間パッと止まったら一見バグのように見えて印象が悪かった。</p>
-      <p><img src="./img/img_no_blr.jpg" alt=""></p>
+      <p><img src="./img/img_no_blr.jpg" alt="" width="60%"></p>
       <p>そのため、あまり背景の挙動が気にならないよう「すりガラス効果」を入れた。</p>
-      <p><img src="./img/img_on_blr.jpg" alt=""></p>
+      <p><img src="./img/img_on_blr.jpg" alt="" width="60%"></p>
 
       <h4 class="headline-lv2">3. 生成画像の破棄</h4>
       <p>Pixi.jsを実装しているコンポーネントが破棄された際、生成された泡を全てdestroyedで破棄している。</p>
 
-      <h4 class="headline-lv2">4. 展望</h4>
-      <p>各ページがコンポーネントなので、実はURLはhome一つしかない。<br>
-        共有も不便でありSEO的にも良い効果を生まないので、Vue Routerで分けたい。</p>
+      <h4 class="headline-lv2">4. ルーティングとモーダルの紐づけ</h4>
+      <p>各ページがコンポーネントなので、実は親URLはhome一つしかない。<br>
+        Vue Routerでchildrenによって各記事のコンポーネントとURLを紐づけている。<br>
+      <p>routerからstoreのモーダル開閉を制御する変数にアクセスすることで、<br>
+        モーダルを開くと共にURLを変更し、あたかもページが数ページあるように見せている。</p>
+      <p><img src="./img/img_routing.jpg" alt="" width="50%"></p>
+      <p>閉じるボタンやブラウザの戻るボタンでホームのURLに戻り、状態をリセットするようにしている。</p>
+
+      <h4 class="headline-lv2">5. 展望</h4>
       <p>また、ビルドがかなり遅いので、chunk-vendorsをカスタマイズするべき。</p>
 
       <h3 class="headline">Art Concept</h3>

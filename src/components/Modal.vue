@@ -3,8 +3,7 @@
     <div class="section-overlay">
       <img class="section-parts-l" src="../assets/img/img_sf_parts1.svg" alt="">
       <div class="section">
-        <!-- propsで渡してArticleを切り替えすること -->
-        <div class="text-layout" v-bind:is="articleID"></div>
+        <router-view/><!-- ここのpathを動的に変える -->
         <!-- current^=1 排他的論理和（違う方を返す演算子） -->
         <!-- メモ：<button v-on:click="current^=1">toggle</button> -->
       </div>
@@ -14,20 +13,8 @@
 </template>
 
 <script>
-import Article1 from "@/components/articles/Article1";
-import Article2 from "@/components/articles/Article2";
-import Article3 from "@/components/articles/Article3";
-import Article4 from "@/components/articles/Article4";
-
 export default {
   name: "Modal",
-  components: {
-    'article1': Article1,
-    'article2': Article2,
-    'article3': Article3,
-    'article4': Article4,
-  },
-  props: ['articleID'],
 }
 </script>
 

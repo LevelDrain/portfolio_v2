@@ -1,22 +1,22 @@
 <template>
   <div class="container-fluid">
-    <Modal v-show="this.$store.state.showSection" :articleID="articleID"/>
+    <Modal v-show="this.$store.state.showSection"/>
     <div class="main-menu">
       <div class="main-menu-inner">
         <!-- 本文枠 -->
         <div class="main-menu-content">
           <div class="main-menu-front pc-hide">
             <ul>
-              <li class="button" @click="open('article1')">
+              <li class="button" @click="openLink('skills')">
                 <span class="btn-accessory">LEVEL1</span>Skills & Works
               </li>
-              <li class="button" @click="open('article2')">
+              <li class="button" @click="openLink('profile')">
                 <span class="btn-accessory">LEVEL2</span>Creator Profile
               </li>
-              <li class="button" @click="open('article3')">
+              <li class="button" @click="openLink('about')">
                 <span class="btn-accessory">LEVEL3</span>About This Portfolio
               </li>
-              <li class="button" @click="open('article4')">
+              <li class="button" @click="openLink('library')">
                 <span class="btn-accessory">LEVEL4</span>上島様名言集
               </li>
             </ul>
@@ -24,16 +24,16 @@
 
           <div class="main-menu-front sp-hide">
             <ul>
-              <li class="button" @click="open('article1')">
+              <li class="button" @click="openLink('skills')">
                 <span class="btn-accessory">LEVEL1</span><br>Skills & Works
               </li>
-              <li class="button" @click="open('article2')">
+              <li class="button" @click="openLink('profile')">
                 <span class="btn-accessory">LEVEL2</span><br>Creator Profile
               </li>
-              <li class="button" @click="open('article3')">
+              <li class="button" @click="openLink('about')">
                 <span class="btn-accessory">LEVEL3</span><br>About This Portfolio
               </li>
-              <li class="button" @click="open('article4')">
+              <li class="button" @click="openLink('library')">
                 <span class="btn-accessory">LEVEL4</span><br>上島様名言集
               </li>
             </ul>
@@ -63,19 +63,19 @@ export default {
   data() {
     return {
       showSection: this.$store.state.showSection,
-      articleID: ''
     }
   },
-  created() {
-    if (this.$route.path === '/') {
-      this.$store.state.inWork = true
-      this.$store.state.inHome = false
-    }
-  },
+  //Work 実装後
+  // created() {
+  //   if (this.$route.path === '/') {
+  //     this.$store.state.inWork = true
+  //     this.$store.state.inHome = false
+  //   }
+  // },
   methods: {
-    open(id) {
-      this.$store.commit('openSection')
-      this.articleID = id
+    openLink(id) {
+      //遷移（遷移と同時にモーダルを開く仕様 → router参照）
+      this.$router.push('/' + id)
     },
   }
 }
