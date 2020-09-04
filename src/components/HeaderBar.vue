@@ -18,6 +18,7 @@ export default {
   name: "Header",
   methods: {
     close() {
+      this.$router.push('/')//閉じてリセット
       this.$store.commit('closeSection')
     }
   }
