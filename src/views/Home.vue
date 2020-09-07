@@ -7,16 +7,16 @@
         <div class="main-menu-content">
           <div class="main-menu-front pc-hide">
             <ul>
-              <li class="button" @click="openLink('skills')">
+              <li class="button" @click="openLink('article1')">
                 <span class="btn-accessory">LEVEL1</span>Skills & Works
               </li>
-              <li class="button" @click="openLink('profile')">
+              <li class="button" @click="openLink('article2')">
                 <span class="btn-accessory">LEVEL2</span>Creator Profile
               </li>
-              <li class="button" @click="openLink('about')">
+              <li class="button" @click="openLink('article3')">
                 <span class="btn-accessory">LEVEL3</span>About This Portfolio
               </li>
-              <li class="button" @click="openLink('library')">
+              <li class="button" @click="openLink('article4')">
                 <span class="btn-accessory">LEVEL4</span>上島様名言集
               </li>
             </ul>

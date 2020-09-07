@@ -47,10 +47,23 @@ export default {
     return {
       showSection: this.$store.state.showSection,
       isLoading: false,
+      title: '',
+      desc: ''
     }
   },
   created() {
     this.doLoading()
+  },
+  watch: {
+    '$route'(to) {
+      this.createPageTitle(to);
+    }
+  },
+  metaInfo: {
+    title: this.title,
+    meta: [
+      {name: 'description', content: this.desc}
+    ]
   },
   methods: {
     doLoading() {
@@ -58,6 +71,21 @@ export default {
       setTimeout(() => {
         this.isLoading = false
       }, 1000)
+    },
+    createPageTitle(to) {
+      // タイトルを設定
+      if (to.meta.title) {
+        this.title = to.meta.title + ' | 上島研究所';
+      } else {
+        this.title = '上島研究所'
+      }
+
+      // メタタグdescription設定
+      if (to.meta.desc) {
+        this.desc = to.meta.desc
+      } else {
+        this.desc = '上島研究所'
+      }
     }
   }
 }

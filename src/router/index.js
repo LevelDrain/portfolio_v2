@@ -14,22 +14,43 @@ const routes = [
         path: '/',
         name: 'Home',
         component: Home,
+        meta: {
+            title: 'ホーム',
+            desc: 'ホーム'
+        },
+
         children: [
             {
-                path: 'skills',
+                path: 'article1',
                 component: Article1,
+                meta: {
+                    title: 'Skills & Works',
+                    desc: 'スキルとピックアップ作品'
+                },
             },
             {
-                path: 'profile',
+                path: 'article2',
                 component: Article2,
+                meta: {
+                    title: 'Creator Profile',
+                    desc: '作者 Level Drain についてのプロフィール'
+                },
             },
             {
-                path: 'about',
+                path: 'article3',
                 component: Article3,
+                meta: {
+                    title: 'About This Portfolio',
+                    desc: 'このポートフォリオについて'
+                },
             },
             {
-                path: 'library',
+                path: 'article4',
                 component: Article4,
+                meta: {
+                    title: 'Skills & Works',
+                    desc: '凹んだ時に元気になる上島氏の名言'
+                },
             },
         ]
     },
