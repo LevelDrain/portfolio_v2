@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import $store from "@/store/index"
+import {setTitle} from '@/mixins'
 import Home from '@/views/Home'
 import Article1 from "@/components/articles/Article1";
 import Article2 from "@/components/articles/Article2";
@@ -71,6 +72,12 @@ const router = new VueRouter({
     mode: 'history',
     base: process.env.BASE_URL,
     routes
+})
+
+router.beforeEach((to, from, next) => {
+    setTitle(to.meta.title)
+    //console.log(to.meta.desc)
+    next()
 })
 
 router.afterEach((to) => {
