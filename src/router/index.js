@@ -25,7 +25,7 @@ const routes = [
                 path: 'article1',
                 component: Article1,
                 meta: {
-                    title: 'Skills & Works',
+                    title: 'スキル',
                     desc: 'スキルとピックアップ作品'
                 },
             },
@@ -33,7 +33,7 @@ const routes = [
                 path: 'article2',
                 component: Article2,
                 meta: {
-                    title: 'Creator Profile',
+                    title: 'プロフィール',
                     desc: '作者 Level Drain についてのプロフィール'
                 },
             },
@@ -41,7 +41,7 @@ const routes = [
                 path: 'article3',
                 component: Article3,
                 meta: {
-                    title: 'About This Portfolio',
+                    title: 'ポートフォリオについて',
                     desc: 'このポートフォリオについて'
                 },
             },
@@ -49,7 +49,7 @@ const routes = [
                 path: 'article4',
                 component: Article4,
                 meta: {
-                    title: 'Skills & Works',
+                    title: '上島名言集',
                     desc: '凹んだ時に元気になる上島氏の名言'
                 },
             },
@@ -76,7 +76,6 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
     setTitle(to.meta.title)
-    //console.log(to.meta.desc)
     next()
 })
 

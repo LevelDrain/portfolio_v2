@@ -1,4 +1,5 @@
 /* ミックスイン … グローバルで使用できるコンポーネントのようなもの */
+/* ※ meta以外に使いまわす予定はないが、勉強のために設置したmixin */
 
 export const setTitle = pathTitle => {
     const siteTitle = '上島研究所'

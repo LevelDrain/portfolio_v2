@@ -52,9 +52,6 @@ export default {
   created() {
     this.doLoading()
   },
-  // mounted() {
-  //   document.querySelector("meta[property='description']").setAttribute('content', this.$route.meta.desc)
-  // },
   methods: {
     doLoading() {
       this.isLoading = true
