@@ -130,6 +130,23 @@
         </a>
       </div>
 
+      <h3 class="headline">Movies</h3>
+      <p>実は、BlenderとUE4で動画を作ったことがあります。<br>
+        本業に注力した、グラボが古いなどの壁を経て、現在趣味から再スタートしようとしております。</p>
+
+      <div class="thumbnail-box">
+        <div class="card-origin">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/PbuMpEVKbFg" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <div class="card-origin">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/DUcEZpyQgSo" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+
     </div>
   </article>
 </template>

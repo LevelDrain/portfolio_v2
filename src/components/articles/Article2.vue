@@ -2,10 +2,16 @@
   <article class="article-inner">
     <div class="article-container">
       <h3 class="headline">Creator Profile</h3>
-      <p><img src="./img/my_icon.png" alt="leveldrain" width="170em"></p>
+      <div class="img-container">
+        <img src="./img/my_icon.png" alt="leveldrain" width="170em">
+      </div>
       <p>元フロントエンドエンジニア上島の弟子。<br>
         活動名 Level Drain、本名「佐村木 友紀（Yuki Samuraki）」。<br>
         アダルト系ゲームのレベルデザイナーからフロントエンドエンジニアになる。
+      </p>
+      <p>
+        <a href="https://twitter.com/to_next_level" target="_blank">Twitter</a><br>
+        <a href="mailto:drain2291@gmail.com">drain2291@gmail.com</a>
       </p>
       <p>佐村木は全国70人程度のレア苗字。
         <ruby>職人
@@ -14,7 +20,7 @@
         の家系。<br>
         脳科学者に憧れバイオ研究者になるが、実験が下手すぎてデータ分析に回る。<br>
         元より攻殻機動隊やゼルダの伝説に憧れていたため、大学院修了後はソシャゲ運営会社に就職。<br>
-        性格は、ゲームのキャラで言えば「熱血な騎士」か「正直で素直な村人」ポジション。猫派。
+        ゲームのキャラで言えば「熱血な騎士」か「正直で素直な村人」ポジション。猫派。
       </p>
 
       <h3 class="headline">Philosophy</h3>
@@ -23,7 +29,8 @@
 
       <h4 class="headline-lv2">ささやかな気配り</h4>
       <p>「ありがとう」「ごめんなさい」は自然に言うよう心がける。<br>
-        当たり前ですが、昨今はできていない人をよく見ます。</p>
+        当たり前ですが、昨今はできていない人をよく見ます。<br>
+        褒め言葉は意識的に増やすようにしております（相手の良い点を見るきっかけになるため）。</p>
 
       <h4 class="headline-lv2">細かい作業を疎かにしない</h4>
       <p>スマホでレイアウトが想定されたものかどうか、safariでくずれないか（高さを指定しないとくずれます）など、<br>
@@ -31,14 +38,15 @@
         仕上がりは依頼されたクオリティの +α を目指します（納期との相談ではありますが）。</p>
 
       <h4 class="headline-lv2">楽しもうという姿勢</h4>
-      <p>何よりも仕事が「辛くない」と感じるかどうか。楽しければ更にヨシ。<br>
-        無理にいやいや仕事しても、メンタル病みながら仕事をしても、<br>
-        結局出来上がる成果物はあまり褒められたものではないことを現場で見てきたため。<br>
+      <p>何よりも仕事に誇りを持って取り組めるかどうか。楽しければ更にヨシ。<br>
+        ネガティブな気持ちを持ちながら作業をしても成果は上がらず、<br>
+        逆に誇りを持って仕事をしているときは、周囲も依頼者も本人も良い流れで動いているため。<br>
         あまり得意ではないものの、楽しみを見つけるよう心がけています。
       </p>
 
       <h3 class="headline">Career</h3>
 
+      <!-- TODO:Vue.jsの良さが出てないので、mixinか何かでテンプレ作ってレスポンシブ対応 -->
       <div class="row justify-content-center">
         <div class="col-11">
           <table class="career-table pc-show">
