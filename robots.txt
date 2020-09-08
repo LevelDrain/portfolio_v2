@@ -1,0 +1,3 @@
+User-Agent:*
+Disallow:
+Sitemap:https://pf-ueshimalab.netlify.app/sitemap.xml

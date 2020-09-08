@@ -86,7 +86,7 @@
       <div class="thumbnail-box">
         <a href="https://leveldrain.sumomo.ne.jp/PokemonButtleJS/Specification.xlsx" class="card-container">
           <div class="card-origin">
-            <img class="card-img-top thumbnail" src="./img/img_pokemon_js.jpg" alt="">
+            <img class="card-img-top thumbnail" src="./img/img_pokemon_excel.jpg" alt="">
             <div class="card-body">
               <div class="card-text">
                 <p>Excel<br>
@@ -100,7 +100,7 @@
 
         <a href="https://leveldrain.sumomo.ne.jp/PokemonButtleJS/" target="_blank" class="card-container">
           <div class="card-origin">
-            <img class="card-img-top thumbnail" src="./img/img_pokemon_excel.jpg" alt="">
+            <img class="card-img-top thumbnail" src="./img/img_pokemon_js.jpg" alt="">
             <div class="card-body">
               <div class="card-text">
                 <p>JavaScript(ES5)<br>

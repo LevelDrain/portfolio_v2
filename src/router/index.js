@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import $store from "@/store/index"
+import {setTitle} from '@/mixins'
 import Home from '@/views/Home'
 import Article1 from "@/components/articles/Article1";
 import Article2 from "@/components/articles/Article2";
@@ -14,22 +15,43 @@ const routes = [
         path: '/',
         name: 'Home',
         component: Home,
+        meta: {
+            title: 'ホーム',
+            desc: 'ホーム'
+        },
+
         children: [
             {
-                path: 'skills',
+                path: 'article1',
                 component: Article1,
+                meta: {
+                    title: 'スキル',
+                    desc: 'スキルとピックアップ作品'
+                },
             },
             {
-                path: 'profile',
+                path: 'article2',
                 component: Article2,
+                meta: {
+                    title: 'プロフィール',
+                    desc: '作者 Level Drain についてのプロフィール'
+                },
             },
             {
-                path: 'about',
+                path: 'article3',
                 component: Article3,
+                meta: {
+                    title: 'ポートフォリオについて',
+                    desc: 'このポートフォリオについて'
+                },
             },
             {
-                path: 'library',
+                path: 'article4',
                 component: Article4,
+                meta: {
+                    title: '上島名言集',
+                    desc: '凹んだ時に元気になる上島氏の名言'
+                },
             },
         ]
     },
@@ -50,6 +72,11 @@ const router = new VueRouter({
     mode: 'history',
     base: process.env.BASE_URL,
     routes
+})
+
+router.beforeEach((to, from, next) => {
+    setTitle(to.meta.title)
+    next()
 })
 
 router.afterEach((to) => {
