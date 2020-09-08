@@ -146,4 +146,57 @@
     border-bottom: solid 1px #6ec9e8;
 }
 
-/* リストデザイン */
+/* テーブルデザイン */
+.career-table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #fff;
+    border-bottom: 1px solid #6ec9e8;
+}
+
+.career-table th{
+    width: 5em;
+}
+
+.career-table th, .career-table td {
+    font-size: 12px;
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #6ec9e8;
+}
+
+.sp-show{
+    display: block;
+}
+
+.pc-show{
+    display: none;
+}
+
+@media all and (min-width: 768px) {
+    .career-table {
+        width: 100%;
+        margin-bottom: 1rem;
+        color: #fff;
+        border-bottom: 1px solid #6ec9e8;
+    }
+
+    .career-table th{
+        width: 5em;
+    }
+
+    .career-table th, .career-table td {
+        font-size: 16px;
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 1px solid #6ec9e8;
+    }
+
+    .sp-show{
+        display: none;
+    }
+
+    .pc-show{
+        display: block;
+    }
+}

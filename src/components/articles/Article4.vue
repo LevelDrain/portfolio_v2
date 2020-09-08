@@ -2,10 +2,9 @@
   <article class="article-inner">
     <div class="article-container">
       <h3 class="headline">About Ueshima</h3>
-      <p>上島 宏史（Hiroshi Ueshima）<br>
+      <p>上島 宏史（Ueshima Hiroshi）<br>
         現京都コンピュータ学院講師および広報担当。<br>
-        元フロントエンドエンジニア、マジシャンなど。<br>
-        ※ 無断掲載につき自粛</p>
+        元フロントエンドエンジニア、マジシャンなど。</p>
 
       <h3 class="headline">Philosophy</h3>
       <p>上島氏が残した名言を記載。<br>
