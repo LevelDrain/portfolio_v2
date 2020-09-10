@@ -69,7 +69,7 @@ export default {
 /* スクロール有コンテンツ */
 .section {
   position: fixed;
-  top: 10%;
+  top: 11%;
   overflow-y: scroll;
   overflow-x: hidden;
   transform: translateZ(0);
