@@ -5,14 +5,27 @@
       <div class="img-container">
         <img src="./img/my_icon.png" alt="leveldrain" width="170em">
       </div>
-      <p>元フロントエンドエンジニア上島の弟子。<br>
+
+      <div class="icon-container">
+        <a href="mailto:drain2291@gmail.com">
+          <font-awesome-icon class="fa-icon" :icon="['far','envelope']"/>
+        </a>
+        <a href="https://twitter.com/to_next_level" target="_blank">
+          <font-awesome-icon class="fa-icon" :icon="['fab','twitter-square']"/>
+        </a>
+        <a href="https://www.facebook.com/darkmatter77" target="_blank">
+          <font-awesome-icon class="fa-icon" :icon="['fab','facebook-square']"/>
+        </a>
+        <a href="https://github.com/LevelDrain/portfolio_v2" target="_blank">
+          <font-awesome-icon class="fa-icon" :icon="['fab','github-square']"/>
+        </a>
+      </div>
+
+      <p>上島の弟子。<br>
         活動名 Level Drain、本名「佐村木 友紀（Yuki Samuraki）」。<br>
         アダルト系ゲームのレベルデザイナーからフロントエンドエンジニアになる。
       </p>
-      <p>
-        <a href="https://twitter.com/to_next_level" target="_blank">Twitter</a><br>
-        <a href="mailto:drain2291@gmail.com">drain2291@gmail.com</a>
-      </p>
+
       <p>佐村木は全国70人程度のレア苗字。
         <ruby>職人
           <rt>アルティザン</rt>
@@ -20,7 +33,7 @@
         の家系。<br>
         脳科学者に憧れバイオ研究者になるが、実験が下手すぎてデータ分析に回る。<br>
         元より攻殻機動隊やゼルダの伝説に憧れていたため、大学院修了後はソシャゲ運営会社に就職。<br>
-        ゲームのキャラで言えば「熱血な騎士」か「正直で素直な村人」ポジション。猫派。
+        職人気質な猫派。
       </p>
 
       <h3 class="headline">Philosophy</h3>
@@ -30,7 +43,7 @@
       <h4 class="headline-lv2">ささやかな気配り</h4>
       <p>「ありがとう」「ごめんなさい」は自然に言うよう心がける。<br>
         当たり前ですが、昨今はできていない人をよく見ます。<br>
-        褒め言葉は意識的に増やすようにしております（相手の良い点を見るきっかけになるため）。</p>
+        ポジティブな声掛けは意識的に増やすようにしております（相手の良い点を見るきっかけになるため）。</p>
 
       <h4 class="headline-lv2">細かい作業を疎かにしない</h4>
       <p>スマホでレイアウトが想定されたものかどうか、safariでくずれないか（高さを指定しないとくずれます）など、<br>

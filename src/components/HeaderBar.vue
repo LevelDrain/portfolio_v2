@@ -3,10 +3,8 @@
     <router-link class="navbar-brand ml-2" to="/">上島研究所</router-link>
 
     <ul class="navbar-nav d-flex flex-row">
-      <router-link tag="li" class="nav-link nav-item mr-2 font-size" v-show="this.$store.state.inHome" to="/">Home
-      </router-link>
-      <!--      <router-link tag="li" class="nav-link nav-item mr-2 font-size" v-show="this.$store.state.inWork" to="/works">Works-->
-      <!--      </router-link>-->
+      <!-- <router-link tag="li" class="nav-link nav-item mr-2 font-size" v-show="this.$store.state.inHome" to="/">Home</router-link>-->
+      <!--      <router-link tag="li" class="nav-link nav-item mr-2 font-size" v-show="this.$store.state.inWork" to="/works">Works</router-link>-->
       <img src="../assets/img/img_close.svg" alt="" v-show="this.$store.state.showSection" @click="close"
            class="close-button">
     </ul>

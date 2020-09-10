@@ -1,4 +1,5 @@
 .thumbnail-box {
+    display: -ms-grid;
     display: grid;
     gap: 1em;
     width: calc(100% - 10px);
@@ -9,6 +10,7 @@
 
 @media all and (min-width: 768px) {
     .thumbnail-box {
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -115,17 +117,26 @@
 
 /* 画像整形 */
 .img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
     -webkit-filter: drop-shadow(0 0 3px #6ec9e8);
     filter: drop-shadow(0 0 3px #6ec9e8);
 }
 
-.img-detail{
+.img-detail {
     width: 100%;
     max-width: 400px;
 }
@@ -215,5 +226,34 @@
 
     .pc-show {
         display: block;
+    }
+}
+
+/* 連絡先アイコン */
+.icon-container {
+    display: -ms-grid;
+    display: grid;
+    gap: 1em;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-auto-rows: auto;
+    -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto 1.5em;
+}
+
+.fa-icon {
+    text-decoration: none;
+    cursor: pointer;
+    color: #6ec9e8;
+    font-size: 2em;
+    -webkit-filter: drop-shadow(0 0 3px rgba(110, 201, 232, .5));
+    filter: drop-shadow(0 0 3px rgba(110, 201, 232, .5));
+}
+
+@media all and (min-width: 768px) {
+    .fa-icon {
+        font-size: 1.5em;
     }
 }
