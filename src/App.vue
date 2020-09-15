@@ -5,16 +5,16 @@
         <HeaderBar/>
       </header>
 
-      <loading
-          :active.sync="isLoading"
-          :can-cancel="true"
-          :is-full-page="true"
-          :transition="'fade'"
-          :color="'#00ffff'"
-          :loader="'bars'"
-          :backgroundColor="'#000'"
-          :opacity=1
-      />
+<!--      <loading-->
+<!--          :active.sync="isLoading"-->
+<!--          :can-cancel="true"-->
+<!--          :is-full-page="true"-->
+<!--          :transition="'fade'"-->
+<!--          :color="'#00ffff'"-->
+<!--          :loader="'bars'"-->
+<!--          :backgroundColor="'#000'"-->
+<!--          :opacity=1-->
+<!--      />-->
       <BubbleEffect class="canvas-bg"/>
       <div class="animation-bg-wrap">
         <img class="animation-bg" src="./assets/img/img_sf_parts2.svg" alt="" v-if="!this.$store.state.showSection">

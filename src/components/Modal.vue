@@ -35,7 +35,7 @@ export default {
   width: auto;
   height: auto;
   background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(3px);
+  /*backdrop-filter: blur(3px);*/
 }
 
 /* SFっぽい装飾 */
