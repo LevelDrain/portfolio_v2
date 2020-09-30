@@ -1,12 +1,12 @@
-const path = require('path')
-const PrerenderSPAPlugin = require('prerender-spa-plugin')
-const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
+//const path = require('path')
+//const PrerenderSPAPlugin = require('prerender-spa-plugin')
+//const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
         ? '/production-sub-path/'
         : '/',
-    pages: {
+    /*pages: {
         index: {
             // entry for the page
             entry: 'src/main.js',
@@ -30,7 +30,8 @@ module.exports = {
         //https://cli.vuejs.org/config/#publicpath
         //https://abierre.com/article/5b28fd48ef2031a4e3025daf
         //https://cli.vuejs.org/config/#lintonsave
-    },
+    },*/
+    
     // configureWebpack: () => {
     //     if (process.env.NODE_ENV === 'production') {
     //         return {
