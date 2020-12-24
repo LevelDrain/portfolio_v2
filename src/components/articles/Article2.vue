@@ -3,31 +3,59 @@
     <div class="article-container">
       <h3 class="headline">Creator Profile</h3>
       <div class="img-container">
-        <img src="./img/my_icon.png" alt="leveldrain" width="170em">
+        <img
+          src="./img/my_icon.png"
+          alt="leveldrain"
+          width="170em"
+        >
       </div>
 
       <div class="icon-container">
         <a href="mailto:drain2291@gmail.com">
-          <font-awesome-icon class="fa-icon" :icon="['far','envelope']"/>
+          <font-awesome-icon
+            class="fa-icon"
+            :icon="['far','envelope']"
+          />
         </a>
-        <a href="https://twitter.com/to_next_level" target="_blank">
-          <font-awesome-icon class="fa-icon" :icon="['fab','twitter-square']"/>
+        <a
+          href="https://twitter.com/level_ueshima"
+          target="_blank"
+        >
+          <font-awesome-icon
+            class="fa-icon"
+            :icon="['fab','twitter-square']"
+          />
         </a>
-        <a href="https://www.facebook.com/darkmatter77" target="_blank">
-          <font-awesome-icon class="fa-icon" :icon="['fab','facebook-square']"/>
+        <a
+          href="https://www.facebook.com/darkmatter77"
+          target="_blank"
+        >
+          <font-awesome-icon
+            class="fa-icon"
+            :icon="['fab','facebook-square']"
+          />
         </a>
-        <a href="https://github.com/LevelDrain/portfolio_v2" target="_blank">
-          <font-awesome-icon class="fa-icon" :icon="['fab','github-square']"/>
+        <a
+          href="https://github.com/LevelDrain/portfolio_v2"
+          target="_blank"
+        >
+          <font-awesome-icon
+            class="fa-icon"
+            :icon="['fab','github-square']"
+          />
         </a>
       </div>
 
-      <p>上島の弟子。<br>
-        活動名 Level Drain、本名「佐村木 友紀（Yuki Samuraki）」。<br>
-        アダルト系ソーシャルゲームのディレクターからフロントエンドエンジニアになる。<br>
-        佐村木は全国70人程度のレア苗字。
+      <p>
+        活動名 上島水準（うえしま れべる）。<br>
+        アダルト系ソーシャルゲームのディレクターからフロントエンドに強いフルスタックエンジニアになる。<br>
+        上島は師弟関係に由来し、本名は全国70人程度のレア苗字。
       </p>
-      <p>ディレクターのバックグラウンドとエンジニアのスキルを持つ。<br>
-      趣味としての目標はCGクリエイター。</p>
+      <p>
+        ディレクターのバックグラウンドとエンジニアのスキルを持つ。<br>
+        趣味としての目標はCGクリエイター。<br>
+        未経験エンジニアの辛さを痛感し、Twitterなどで情報提供を行うなど任意で支援をしている。
+      </p>
 
       <h3 class="headline">Philosophy</h3>
       <p>制作ポリシーとしては信頼関係をまず重視します。<br>
@@ -35,8 +63,8 @@
 
       <h4 class="headline-lv2">ささやかな気配り</h4>
       <p>「ありがとう」「ごめんなさい」は自然に言うよう心がける。<br>
-        当たり前ですが、昨今はできていない人をよく見ます。<br>
-        ポジティブな声掛けは意識的に増やすようにしております（相手の良い点を見るきっかけになるため）。</p>
+        また、「ええ感じにしといてよ」と言った不明瞭な案件に対しても、真剣にお応えします。
+      </p>
 
       <h4 class="headline-lv2">細かい作業を疎かにしない</h4>
       <p>スマホでレイアウトが想定されたものかどうか、safariでくずれないか（高さを指定しないとくずれます）など、<br>
@@ -130,9 +158,9 @@
 </template>
 
 <script>
-import './styles_article.css'
+import "./styles_article.css";
 
 export default {
-  name: "Article2",
-}
+  name: "Article2"
+};
 </script>
