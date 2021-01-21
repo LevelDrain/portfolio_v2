@@ -1,6 +1,6 @@
 <template>
   <div class="footer-color">
-    <span class="text-muted footer-text">© LevelDrain 2020</span>
+    <span class="text-muted footer-text">© Level Ueshima 2021</span>
   </div>
 </template>
 

@@ -2,12 +2,6 @@
   <article class="article-inner">
     <div class="article-container">
       <h3 class="headline">About This Portfolio</h3>
-      <p>JavaScript、および人生が変わるきっかけをくださった恩師「上島」の<br>
-        技術や哲学、そして私自身の成長を最大限に体現するための「実験サイト」である。<br>
-        研究所は「実験をする場」という意味であり、大学などの研究機関には実在しない架空のものである。</p>
-      <h4 class="headline-lv2">リソースもコードも完全自作の超大作である！！！！</h4>
-
-      <h3 class="headline">Ingenuity</h3>
       <p>本ポートフォリオはVue.js+Pixi.jsにより制作されており、SVGアニメーションも併せて実装しているため<br>
         処理負荷を軽減する工夫をしている。</p>
 
@@ -54,14 +48,7 @@
         「自分が体験しているこの世界は、実は水槽に浮かんだ脳が見ているバーチャルリアリティなのではないか」<br>
         という懐疑主義的な思考実験(<a href="https://w.atwiki.jp/p_mind/pages/35.html" target="_blank">心の哲学まとめwiki</a>)。
       </p>
-      <p>上島氏が好きなSF映画や授業中の発言に基づく。</p>
-
-      <h4 class="headline-lv2">ホーム画面の英文訳</h4>
-      <p>We might be actually a brain hooked up to a computer program<br>
-        that can perfectly simulate experiences of the outside world.<br>
-        …… So I wanna be an ARTISAN for human emotions.</p>
-      <p>我々の脳は外の世界（現実）を完全再現することができるコンピュータに繋がっているだけかも知れない。<br>
-        したがって、私は「エモい！！」を生み出す職人でありたい。</p>
+      
     </div>
   </article>
 </template>

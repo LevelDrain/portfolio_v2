@@ -49,8 +49,8 @@ const routes = [
                 path: 'article4',
                 component: Article4,
                 meta: {
-                    title: '上島名言集',
-                    desc: '凹んだ時に元気になる上島氏の名言'
+                    title: '前田デザイン室の活動',
+                    desc: 'オンラインサロン前田デザイン室での活動'
                 },
             },
         ]

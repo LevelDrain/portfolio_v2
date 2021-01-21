@@ -17,7 +17,7 @@
                 <span class="btn-accessory">LEVEL3</span>About This Portfolio
               </li>
               <li class="button" @click="openLink('article4')">
-                <span class="btn-accessory">LEVEL4</span>上島様名言集
+                <span class="btn-accessory">LEVEL4</span>前田デザイン室の活動
               </li>
             </ul>
           </div>
@@ -34,7 +34,7 @@
                 <span class="btn-accessory">LEVEL3</span><br>About This Portfolio
               </li>
               <li class="button" @click="openLink('article4')">
-                <span class="btn-accessory">LEVEL4</span><br>上島様名言集
+                <span class="btn-accessory">LEVEL4</span><br>前田デザイン室の活動
               </li>
             </ul>
           </div>
