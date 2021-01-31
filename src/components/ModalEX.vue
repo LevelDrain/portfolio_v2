@@ -1,14 +1,18 @@
 <template>
-  <transition name="modal" appear>
+  <transition
+    name="modal"
+    appear>
     <div class="modal modal-overlay">
       <div class="modal-window">
         <div class="modal-content">
-          <slot/>
+          <slot />
         </div>
         <footer class="modal-footer">
           <slot name="footer">
             <!-- 子コンポーネントからの発射$emit -->
-            <button @click="$emit('close')">Close</button>
+            <button @click="$emit('close')">
+              Close
+            </button>
           </slot>
         </footer>
       </div>
@@ -19,7 +23,7 @@
 
 <script>
 export default {
-  name: "ModalEX"
+  name: 'ModalEX'
 }
 </script>
 

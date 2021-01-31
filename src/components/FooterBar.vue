@@ -6,18 +6,11 @@
 
 <script>
 export default {
-  name: "FooterBar"
+  name: 'FooterBar'
 }
 </script>
 
 <style scoped>
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 .footer-color {
   background: rgba(0, 0, 0, .7);
 }

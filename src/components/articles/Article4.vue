@@ -1,10 +1,17 @@
 <template v-slot:page3>
   <article class="article-inner">
     <div class="article-container">
-      <h3 class="headline">前田デザイン室の活動</h3>
+      <h3 class="headline">
+        前田デザイン室の活動
+      </h3>
       <p>
-        <a href="https://whats.maeda-design-room.net/" target="_blank">
-          <img src="./img/img_maede.jpg" alt="" class="img-detail">
+        <a
+          href="https://whats.maeda-design-room.net/"
+          target="_blank">
+          <img
+            src="./img/img_maede.jpg"
+            alt=""
+            class="img-detail">
         </a>
       </p>
       <p>
@@ -15,10 +22,14 @@
         みんな集まれ！
       </p>
       <p>
-        <a href="https://community.camp-fire.jp/projects/view/66627" target="_blank">キャンプファイヤー参加ページ</a>より抜粋
+        <a
+          href="https://community.camp-fire.jp/projects/view/66627"
+          target="_blank">キャンプファイヤー参加ページ</a>より抜粋
       </p>
 
-      <h3 class="headline">具体的な活動</h3>
+      <h3 class="headline">
+        具体的な活動
+      </h3>
       <p>
         積極的に活動し始めたのが2020年12月末の忘年会のため、まだまだスタートラインではありますが、<br>
         自己分析と性格改善に向けたプロセスで得た知見の書籍化、カードゲームの企画、
@@ -26,7 +37,6 @@
         ゆくゆくはWebGLや3DCGを使ったアーティストとして名をはせるための活動をすることが目標。<br>
         仕事ではなく趣味の集まりとして、ゆるいけれども積極的な活動をしている。
       </p>
-
     </div>
   </article>
 </template>
@@ -35,6 +45,6 @@
 import './styles_article.css'
 
 export default {
-  name: "Article4",
+  name: 'Article4',
 }
 </script>

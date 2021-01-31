@@ -1,12 +1,13 @@
 <template>
-  <div ref="canvas"/>
+  <div ref="canvas" />
 </template>
 
 <script>
 import * as PIXI from 'pixi.js'
+import img_buble from '../assets/img/bubble.png'
 
 export default {
-  name: "Bubble",
+  name: 'Bubble',
   data() {
     return {
       pixiApp: null,
@@ -31,8 +32,8 @@ export default {
     this.center = {x: this.pixiApp.renderer.screen.width / 2, y: this.pixiApp.renderer.screen.height}
 
     while (this.circles.length < totalCircle) {
-      let circle = PIXI.Sprite.from(require('../assets/img/bubble.png'));
-      circle.height = circle.width = (Math.random() * 10 + 1) + 10
+      let circle = PIXI.Sprite.from(img_buble)
+      circle.height = circle.width = Math.random() * 10 + 1 + 10
       circle.alpha = Math.random()
       circle.position.x = this.center.x + Math.random() * 1000 - 500
       circle.position.y = this.center.y + Math.random() * 1000 - 500

@@ -1,31 +1,40 @@
 <template>
   <div id="app">
     <div class="h-100 main-bg">
-      <header id="Header" class="fixed-top">
-        <HeaderBar/>
+      <header
+        id="Header"
+        class="fixed-top">
+        <HeaderBar />
       </header>
 
       <loading
-          :active.sync="isLoading"
-          :can-cancel="true"
-          :is-full-page="true"
-          :transition="'fade'"
-          :color="'#00ffff'"
-          :loader="'bars'"
-          :backgroundColor="'#000'"
-          :opacity=1
-      />
-      <BubbleEffect class="canvas-bg"/>
+        :active.sync="isLoading"
+        :can-cancel="true"
+        :is-full-page="true"
+        :transition="'fade'"
+        :color="'#00ffff'"
+        :loader="'bars'"
+        :background-color="'#000'"
+        :opacity="1" />
+      <BubbleEffect class="canvas-bg" />
       <div class="animation-bg-wrap">
-        <img class="animation-bg" src="./assets/img/img_sf_parts2.svg" alt="" v-if="!this.$store.state.showSection">
+        <img
+          v-if="!this.$store.state.showSection"
+          class="animation-bg"
+          src="./assets/img/img_sf_parts2.svg"
+          alt="">
       </div>
 
-      <main id="Main" role="main">
-        <router-view/>
+      <main
+        id="Main"
+        role="main">
+        <router-view />
       </main>
 
-      <footer id="Footer" class="fixed-bottom">
-        <FooterBar/>
+      <footer
+        id="Footer"
+        class="fixed-bottom">
+        <FooterBar />
       </footer>
     </div>
   </div>
@@ -39,12 +48,12 @@ import BubbleEffect from '@/components/Bubble.vue'
 export default {
   name: 'App',
   components: {
-    HeaderBar,
-    FooterBar,
+    HeaderBar, FooterBar,
     BubbleEffect,
   },
   data() {
     return {
+    
       showSection: this.$store.state.showSection,
       isLoading: false,
     }

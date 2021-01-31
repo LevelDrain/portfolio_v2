@@ -1,20 +1,28 @@
 <template>
-  <transition name="section" v-cloak>
+  <transition
+    v-cloak
+    name="section">
     <div class="section-overlay">
-      <img class="section-parts-l" src="../assets/img/img_sf_parts1.svg" alt="">
+      <img
+        class="section-parts-l"
+        src="../assets/img/img_sf_parts1.svg"
+        alt="">
       <div class="section">
-        <router-view/><!-- ここのpathを動的に変える -->
+        <router-view /><!-- ここのpathを動的に変える -->
         <!-- current^=1 排他的論理和（違う方を返す演算子） -->
         <!-- メモ：<button v-on:click="current^=1">toggle</button> -->
       </div>
-      <img class="section-parts-r" src="../assets/img/img_sf_parts1.svg" alt="">
+      <img
+        class="section-parts-r"
+        src="../assets/img/img_sf_parts1.svg"
+        alt="">
     </div>
   </transition>
 </template>
 
 <script>
 export default {
-  name: "Modal",
+  name: 'Modal',
 }
 </script>
 
