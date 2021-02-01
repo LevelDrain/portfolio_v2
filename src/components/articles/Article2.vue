@@ -7,53 +7,61 @@
       <div class="img-container">
         <img
           src="./img/my_icon.png"
-          alt="leveldrain"
-          width="170em">
+          alt="levelicon"
+          width="170em"
+        >
       </div>
 
       <div class="icon-container">
         <a href="mailto:drain2291@gmail.com">
           <font-awesome-icon
             class="fa-icon"
-            :icon="['far','envelope']" />
+            :icon="['far','envelope']"
+          />
         </a>
         <a
           href="https://twitter.com/level_ueshima"
-          target="_blank">
+          target="_blank"
+        >
           <font-awesome-icon
             class="fa-icon"
-            :icon="['fab','twitter-square']" />
+            :icon="['fab','twitter-square']"
+          />
         </a>
         <a
           href="https://www.facebook.com/darkmatter77"
-          target="_blank">
+          target="_blank"
+        >
           <font-awesome-icon
             class="fa-icon"
-            :icon="['fab','facebook-square']" />
+            :icon="['fab','facebook-square']"
+          />
         </a>
         <a
           href="https://github.com/LevelDrain/portfolio_v2"
-          target="_blank">
+          target="_blank"
+        >
           <font-awesome-icon
             class="fa-icon"
-            :icon="['fab','github-square']" />
+            :icon="['fab','github-square']"
+          />
         </a>
       </div>
 
       <p>
-        活動名 上島水準（うえしま すいじゅん）。<br>
-        アダルト系ソーシャルゲームのディレクターからフロントエンドに強いエンジニアになる。<br>
-        本名は全国70人程度のレア苗字であり、上島ではない。
+        あるきっかけから上島水準（うえしますいじゅん）として活動。<br>
+        本名は佐村木（さむらき）という珍しい苗字。
       </p>
       <p>
-        ソシャゲプランナーおよびレベルデザイナーのバックグラウンドと、エンジニアのスキルを持つ。<br>
-        趣味としての目標はCGクリエイター。
+        アダルト系ソーシャルゲームのレベルデザイナーを経てフロントエンドに強いエンジニアになる……<br>
+        はずだったが、昨今の新型ウイルスの影響から案件がなくなり失業。<br>
+        改めて自分を棚卸しし、クリエイティブ業界を支援するシステムエンジニア（便利屋）を目指して再スタート。
       </p>
       <p>
-        大学院修了後、ソーシャルゲームに携わった際に、手作業によるパラメータ調整、ライターが書いたキャラクターのセリフのデータ化、
-        お知らせ用ランディングページの作成など、膨大な工数の作業が発生していましたが、3日という短納期に間に合わせるため、
-        Excelにて自主的に効率化しておりました（レベルデザイナーと社内SEを兼ねた立場）。<br>
-        その際に、PHPやJavaScriptの知識があればよりツールにできると考え、全財産を投入し専門学校への入学を決めた経緯があります。
+        過去にPythonによる統計解析を行っており、実は数学に（まあまあ）強い面もある。<br>
+        また、マルチメディアプログラミング（Three.js と ES6）の授業で物凄くいい顔をしていたようなので、<br>
+        そのモチベーションを仕事に活かせたらと思っています。<br>
+        案件に関わったことはないですが、数値解析と3DCGが好きです。
       </p>
 
       <h3 class="headline">
@@ -68,7 +76,7 @@
               <th>2009年</th>
               <td>
                 脳科学者になりたいと思い、長浜バイオ大学に入学。<br>
-                在学中に統計学や生命情報科学、3DCGに興味を持つ。実験に挫折。
+                在学中に統計学や生命情報科学、3DCGに興味を持つ。
               </td>
             </tr>
             <tr>

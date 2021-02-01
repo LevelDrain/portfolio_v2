@@ -5,16 +5,16 @@
         About Skills
       </h3>
       <p>
-        主な開発言語は JavaScript / PHP。<br>
-        得意さ：ディレクション = フロントエンド ＞ サーバサイド<br>
-        Photoshop およびイラレは趣味程度。
+        主な開発言語は JavaScript / PHP / (Java / Python)。<br>
+        フロントエンドが得意ではあるものの、昨今の情勢を受けてバックエンドを含むシステム全体の開発を希望する。<br>
+        大学院の実験データ解析でPythonを使用した経験があり、最近は改めてPythonを趣味で始める。
       </p>
 
       <h3 class="headline">
-        Web Direction
+        Game System Design
       </h3>
       <p>
-        アダルト系ソーシャルゲームの真面目なディレクションを2年ほど行う。<br>
+        アダルト系ソーシャルゲームのプランナーを2年ほど行う。<br>
         レベルデザイン（ゲームのUX調整）、UIおよび広告サイトの仕様書などを手掛ける。
       </p>
 
@@ -22,12 +22,14 @@
         <a
           href="https://www.slideshare.net/YukiSamuraki/ss-212325102"
           target="_blank"
-          class="card-container">
+          class="card-container"
+        >
           <div class="card-origin">
             <img
               class="card-img-top thumbnail"
               src="./img/img_social_game.jpg"
-              alt="">
+              alt=""
+            >
             <div class="card-body">
               <div class="card-text">
                 <p>LT登壇資料<br>
@@ -40,12 +42,14 @@
         <a
           href="https://leveldrain.sumomo.ne.jp/Portfolio/FEIF_calc.xlsx"
           target="_blank"
-          class="card-container">
+          class="card-container"
+        >
           <div class="card-origin">
             <img
               class="card-img-top thumbnail"
               src="./img/img_level_design.jpg"
-              alt="">
+              alt=""
+            >
             <div class="card-body">
               <div class="card-text">
                 <p>Excel<br>
@@ -66,18 +70,19 @@
         Sassやbootstrapを使用した開発経験もあるが、CSSの方が受託案件多め（メンテの都合らしい）。
       </p>
       <p>業務で使用しているのは主にLaravel環境内のVue.jsであり、axiosなどのAPI連携まで実装経験がある。</p>
-      <p>- Three.jsによる開発は特に燃える。</p>
 
       <div class="thumbnail-box">
         <a
           href="https://leveldrain.sumomo.ne.jp/WebEffectGenerator/geostorm.html"
           target="_blank"
-          class="card-container">
+          class="card-container"
+        >
           <div class="card-origin">
             <img
               class="card-img-top thumbnail"
               src="./img/img_work_geostorm.jpg"
-              alt="">
+              alt=""
+            >
             <div class="card-body">
               <div class="card-text">
                 <p>JavaScript / Three.js<br>
@@ -89,12 +94,14 @@
 
         <router-link
           to="/"
-          class="card-container">
+          class="card-container"
+        >
           <div class="card-origin">
             <img
               class="card-img-top thumbnail"
               src="./img/img_portfolio2.jpg"
-              alt="">
+              alt=""
+            >
             <div class="card-body">
               <div class="card-text">
                 <p>
@@ -118,12 +125,14 @@
       <div class="thumbnail-box">
         <a
           href="https://leveldrain.sumomo.ne.jp/PokemonButtleJS/Specification.xlsx"
-          class="card-container">
+          class="card-container"
+        >
           <div class="card-origin">
             <img
               class="card-img-top thumbnail"
               src="./img/img_pokemon_excel.jpg"
-              alt="">
+              alt=""
+            >
             <div class="card-body">
               <div class="card-text">
                 <p>Excel<br>
@@ -138,12 +147,14 @@
         <a
           href="https://leveldrain.sumomo.ne.jp/PokemonButtleJS/"
           target="_blank"
-          class="card-container">
+          class="card-container"
+        >
           <div class="card-origin">
             <img
               class="card-img-top thumbnail"
               src="./img/img_pokemon_js.jpg"
-              alt="">
+              alt=""
+            >
             <div class="card-body">
               <div class="card-text">
                 <p>JavaScript(ES5)<br>
@@ -166,12 +177,14 @@
         <a
           href="https://leveldrain.sumomo.ne.jp/beginnernovels/"
           target="_blank"
-          class="card-container">
+          class="card-container"
+        >
           <div class="card-origin">
             <img
               class="card-img-top thumbnail"
               src="./img/img_visual_novel.jpg"
-              alt="">
+              alt=""
+            >
             <div class="card-body">
               <div class="card-text">
                 <p>PHP<br>
@@ -198,7 +211,8 @@
             src="https://www.youtube.com/embed/PbuMpEVKbFg"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen />
+            allowfullscreen
+          />
         </div>
         <div class="card-origin">
           <iframe
@@ -207,7 +221,8 @@
             src="https://www.youtube.com/embed/DUcEZpyQgSo"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen />
+            allowfullscreen
+          />
         </div>
       </div>
     </div>

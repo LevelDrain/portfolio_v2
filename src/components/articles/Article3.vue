@@ -73,11 +73,6 @@
       </div>
       <p>閉じるボタンやブラウザの戻るボタンでホームのURLに戻り、状態をリセットするようにしている。</p>
 
-      <h4 class="headline-lv2">
-        5. 展望
-      </h4>
-      <p>また、ビルドがかなり遅いので、chunk-vendorsをカスタマイズするべき。</p>
-
       <h3 class="headline">
         Art Concept
       </h3>
