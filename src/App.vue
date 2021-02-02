@@ -53,7 +53,6 @@ export default {
   },
   data() {
     return {
-    
       showSection: this.$store.state.showSection,
       isLoading: false,
     }
