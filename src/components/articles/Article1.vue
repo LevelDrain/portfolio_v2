@@ -1,6 +1,25 @@
 <template v-slot:page1>
   <article class="article-inner">
     <div class="article-container">
+      <p>
+        <img
+          src="./img/ap_title.svg"
+          alt="やりたいことをやろう"
+        >
+      </p>
+
+      <p>
+        夢で飯は食えない、需要がない…… そのような考え方をする人がいます。<br>
+        やりたい事を達成できず、人生のキャリアプランをやむを得ず再設計することもあります。<br>
+        しかし、本当にそれで良い顔をして仕事ができるのでしょうか？<br>
+        <br>
+        ソシャゲ、ボーカロイド、バーチャルYouTuber、VR など、アーティストが活躍するフィールドは技術の進歩によって確立されてきました。<br>
+        想いをアウトプットするフィールドは、ITの力によって増えています。<br>
+        <br>
+        需要を生み出すこともクリエイターの仕事です。<br>
+        人生をずいぶんと冒険してしまった私に、統計学やITの力でお手伝いさせてください。
+      </p>
+
       <h3 class="headline">
         About Skills
       </h3>
@@ -230,9 +249,9 @@
 </template>
 
 <script>
-import './styles_article.css'
+    import './styles_article.css'
 
-export default {
-  name: 'Article1'
-}
+    export default {
+        name: 'Article1'
+    }
 </script>
