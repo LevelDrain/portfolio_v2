@@ -2,22 +2,59 @@
   <article class="article-inner">
     <div class="article-container">
       <p>
-        <img
-          src="./img/ap_title.svg"
-          alt="やりたいことをやろう"
+        <svg
+          class="article-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 46.50465 4.50045"
+          version="1.1"
         >
+          <g id="Text">
+            <text
+              class="text33"
+              xml:space="preserve"
+              style="font-style:normal;font-weight:normal;line-height:1;font-family:sans-serif;fill: #fff;"
+              x="-0.52499634"
+              y="3.8434343"
+            >
+              <tspan
+                class="tspan31"
+                x="-0.52499634"
+                y="3.8434343"
+                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;"
+              >やりたいことをやろう</tspan>
+            </text>
+          </g>
+
+          <mask id="Mask-ani">
+            <text
+              id="Mask-line"
+              xml:space="preserve"
+              style="font-style:normal;font-weight:normal;line-height:1;font-family:sans-serif;fill: none;"
+              x="-0.52499634"
+              y="3.8434343"
+            >
+              <tspan
+                class="tspan31"
+                x="-0.52499634"
+                y="3.8434343"
+                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;"
+              >やりたいことをやろう</tspan>
+            </text>
+          </mask>
+        </svg>
       </p>
 
       <p>
         夢で飯は食えない、需要がない…… そのような考え方をする人がいます。<br>
         やりたい事を達成できず、人生のキャリアプランをやむを得ず再設計することもあります。<br>
-        しかし、本当にそれで良い顔をして仕事ができるのでしょうか？<br>
+        しかし、真面目にやりたいことを実践している人達は、『良い顔』をして働いています。<br>
         <br>
-        ソシャゲ、ボーカロイド、バーチャルYouTuber、VR など、アーティストが活躍するフィールドは技術の進歩によって確立されてきました。<br>
-        想いをアウトプットするフィールドは、ITの力によって増えています。<br>
+        ソシャゲ、ボーカロイド、バーチャルYouTuber、VR など、アーティストが活躍するフィールドは
+        技術の進歩によって確立されてきました。<br>
+        想いを形にするフィールドは、ITの力によって増えています。<br>
         <br>
         需要を生み出すこともクリエイターの仕事です。<br>
-        人生をずいぶんと冒険してしまった私に、統計学やITの力でお手伝いさせてください。
+        統計学やITの力で、貴方の夢の実現をお手伝いさせてください。
       </p>
 
       <h3 class="headline">
