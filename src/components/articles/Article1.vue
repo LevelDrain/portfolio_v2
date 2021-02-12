@@ -25,22 +25,15 @@
             </text>
           </g>
 
-          <mask id="Mask-ani">
-            <text
+          <!-- <mask id="Mask-ani">
+            <rect
               id="Mask-line"
-              xml:space="preserve"
-              style="font-style:normal;font-weight:normal;line-height:1;font-family:sans-serif;fill: none;"
               x="-0.52499634"
               y="3.8434343"
-            >
-              <tspan
-                class="tspan31"
-                x="-0.52499634"
-                y="3.8434343"
-                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;"
-              >やりたいことをやろう</tspan>
-            </text>
-          </mask>
+              width="465"
+              height="45"
+            />
+          </mask> -->
         </svg>
       </p>
 
