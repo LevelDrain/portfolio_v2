@@ -1,9 +1,3 @@
-/* フォントの参照 */
-@font-face {
-    font-family: "karakazeR";
-    src: url("fonts/karakaze-R.ttf");
-}
-
 .thumbnail-box {
     display: -ms-grid;
     display: grid;
@@ -57,26 +51,21 @@
     margin-top: 1rem;
 }
 
-#Text{
-    mask:url(#Mask-ani);
+#Svg-ttl-01{
+    /* 指定のマスクをかぶせる */
+    mask:url(#Svg-mask-ani-01);
 }
 
-#Text text {
-    stroke: none;
-    stroke-opacity: 0;
-    stroke-width: 0.1;
-    font-size: 1.5rem;
-}
-
-#Mask-line {
+#Svg-mask-line-01 {
+    /* マスクのアニメーション */
     stroke:#fff;
-    stroke-dasharray:2000;
-    animation: h-written 10s linear forwards;
+    stroke-dasharray:200;
+    animation: write 4s linear forwards;
 }
 
-@keyframes h-written {
+@keyframes write {
     0% {
-        stroke-dashoffset: 50;
+        stroke-dashoffset: 200;
     }
 
     100% {
