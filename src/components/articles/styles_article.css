@@ -56,8 +56,8 @@
     mask:url(#Svg-mask-ani-01);
 }
 
+/* マスクのアニメーション */
 #Svg-mask-line-01 {
-    /* マスクのアニメーション */
     stroke:#fff;
     stroke-dasharray:200;
     animation: write 4s linear forwards;
@@ -71,11 +71,6 @@
     100% {
         stroke-dashoffset: 0;
     }
-}
-
-.article-svg tspan {
-    font-size: 5.33387px;
-    font-family: karakazeR;
 }
 
 @media all and (min-width: 768px) {

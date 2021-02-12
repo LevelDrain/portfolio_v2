@@ -7,9 +7,6 @@
           version="1.1"
           viewBox="0 0 46.505 4.5004"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:cc="http://creativecommons.org/ns#"
-          xmlns:dc="http://purl.org/dc/elements/1.1/"
-          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
         >
           <g
             id="Svg-ttl-01"
@@ -49,7 +46,7 @@
         想いを形にするフィールドは、ITの力によって増えています。<br>
         <br>
         需要を生み出すこともクリエイターの仕事です。<br>
-        統計学やITの力で、貴方の夢の実現をお手伝いさせてください。
+        ITの力で、夢の実現をお手伝いさせてください。
       </p>
 
       <h3 class="headline">
@@ -57,70 +54,20 @@
       </h3>
       <p>
         主な開発言語は JavaScript / PHP / (Java / Python)。<br>
-        フロントエンドが得意ではあるものの、昨今の情勢を受けてバックエンドを含むシステム全体の開発を希望する。<br>
+        エンジニアの業務範囲の中でもグラフィック寄りのフロントエンドが得意（バックエンドを含むシステム開発も可能）。<br>
+        クリエイティブディレクターを目指し、エンジニアとしてアーティストを応援したい。<br>
         開発困難になったプロジェクトのリバースエンジニアリングと修正、カスタマイズを行っていたことから、コード分析能力と問題解決には自信がある。
       </p>
-
-      <h3 class="headline">
-        Game System Design
-      </h3>
-      <p>
-        アダルト系ソーシャルゲームのプランナーを2年ほど行う。<br>
-        レベルデザイン（ゲームのUX調整）、UIおよび広告サイトの仕様書などを手掛ける。
-      </p>
-
-      <div class="thumbnail-box">
-        <a
-          href="https://www.slideshare.net/YukiSamuraki/ss-212325102"
-          target="_blank"
-          class="card-container"
-        >
-          <div class="card-origin">
-            <img
-              class="card-img-top thumbnail"
-              src="./img/img_social_game.jpg"
-              alt=""
-            >
-            <div class="card-body">
-              <div class="card-text">
-                <p>LT登壇資料<br>
-                  ソシャゲの UX について</p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a
-          href="https://leveldrain.sumomo.ne.jp/Portfolio/FEIF_calc.xlsx"
-          target="_blank"
-          class="card-container"
-        >
-          <div class="card-origin">
-            <img
-              class="card-img-top thumbnail"
-              src="./img/img_level_design.jpg"
-              alt=""
-            >
-            <div class="card-body">
-              <div class="card-text">
-                <p>Excel<br>
-                  自作レベルデザインツール<br>
-                  ※ クリックでExcelファイルをダウンロードできます
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
 
       <h3 class="headline">
         Frontend
       </h3>
       <p>
-        JavaScript / Vue.js (Vue Router, Vuexを含む) / jQuery / Pixi.js, Three.js などのWebGL系ライブラリ<br>
-        Sassやbootstrapを使用した開発経験もあるが、CSSの方が受託案件多め（メンテの都合らしい）。
+        JavaScript / Vue.js (Vue Router, Vuexを含む) / jQuery<br>
+        Sassやbootstrapを使用した開発経験もあるが、CSSの方が受託案件多め（メンテの都合）。<br>
+        Pixi.js, Three.js などのWebGL系ライブラリには思い出がある。
       </p>
-      <p>業務で使用しているのは主にLaravel環境内のVue.jsであり、axiosなどのAPI連携まで実装経験がある。</p>
+      <p>業務で使用していたのは主にLaravel環境内のVue.jsであり、axiosなどのAPI連携まで実装経験がある。</p>
 
       <div class="thumbnail-box">
         <a
@@ -166,11 +113,71 @@
       </div>
 
       <h3 class="headline">
-        Web Direction + Frontend
+        Movies
+      </h3>
+      <p>
+        BlenderとUE4で動画を作ったことがあります。<br>
+        Unity勉強中。
+      </p>
+
+      <div class="thumbnail-box">
+        <div class="card-origin">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/PbuMpEVKbFg"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
+        </div>
+        <div class="card-origin">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/DUcEZpyQgSo"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
+        </div>
+      </div>
+
+      <h3 class="headline">
+        Serverside
+      </h3>
+      <p>
+        PHP / Laravel 経験あり。
+      </p>
+
+      <div class="thumbnail-box">
+        <a
+          href="https://leveldrain.sumomo.ne.jp/beginnernovels/"
+          target="_blank"
+          class="card-container"
+        >
+          <div class="card-origin">
+            <img
+              class="card-img-top thumbnail"
+              src="./img/img_visual_novel.jpg"
+              alt=""
+            >
+            <div class="card-body">
+              <div class="card-text">
+                <p>PHP<br>
+                  Webビジュアルノベルツール</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <h3 class="headline">
+        Planning
       </h3>
       <p>
         JavaScriptによる初作品。<br>
-        コードはあまりキレイではないものの、仕様書は冴えている。
+        コードはあまりキレイではないものの、仕様書は優れている。
       </p>
 
       <div class="thumbnail-box">
@@ -214,67 +221,6 @@
             </div>
           </div>
         </a>
-      </div>
-
-      <h3 class="headline">
-        Serverside
-      </h3>
-      <p>
-        Blade に Vue.js を突っ込んだり、CRUD の実装をしたりする。<br>
-        生の PHP の経験は学生時代からあり、Laravel より若干長い。
-      </p>
-
-      <div class="thumbnail-box">
-        <a
-          href="https://leveldrain.sumomo.ne.jp/beginnernovels/"
-          target="_blank"
-          class="card-container"
-        >
-          <div class="card-origin">
-            <img
-              class="card-img-top thumbnail"
-              src="./img/img_visual_novel.jpg"
-              alt=""
-            >
-            <div class="card-body">
-              <div class="card-text">
-                <p>PHP<br>
-                  Webビジュアルノベルツール</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <h3 class="headline">
-        Movies
-      </h3>
-      <p>
-        実は、BlenderとUE4で動画を作ったことがあります。<br>
-        本業に注力した、グラボが古いなどの壁を経て、現在趣味から再スタートしようとしております。
-      </p>
-
-      <div class="thumbnail-box">
-        <div class="card-origin">
-          <iframe
-            width="100%"
-            height="315"
-            src="https://www.youtube.com/embed/PbuMpEVKbFg"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          />
-        </div>
-        <div class="card-origin">
-          <iframe
-            width="100%"
-            height="315"
-            src="https://www.youtube.com/embed/DUcEZpyQgSo"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          />
-        </div>
       </div>
     </div>
   </article>
