@@ -18,9 +18,7 @@
       </p>
       <p>
         元・任天堂デザイナー前田高志と共にクリエイティブを楽しむ集団です。<br>
-        「おもろ！たのし！いいな！」をモットーに、世の中に新しいモノとコトを投下していきます。<br>
-        ものづくりが好きだけど発散するところがない、悶々としたクリエイター、未経験者も大歓迎です。<br>
-        みんな集まれ！
+        「おもろ！たのし！いいな！」をモットーに、世の中に新しいモノとコトを投下していきます。
       </p>
       <p>
         <a
@@ -62,7 +60,7 @@
         </a>
 
         <a
-          href="https://note.com/leveldrain/n/n4f7b7a91baf8"
+          href="https://github.com/LevelDrain/slidertest"
           target="_blank"
           class="card-container"
         >
@@ -76,7 +74,51 @@
               <div class="card-text">
                 <p>
                   ぬけだ荘<br>
-                  所信表明（noteへリンク）
+                  その他、Web制作提案用の試作品（githubへ移動）
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://note.com/leveldrain/n/nb0da6b60275f"
+          target="_blank"
+          class="card-container"
+        >
+          <div class="card-origin">
+            <img
+              class="card-img-top thumbnail"
+              src="./img/img_garyoku.jpg"
+              alt=""
+            >
+            <div class="card-body">
+              <div class="card-text">
+                <p>
+                  ぬけだ荘<br>
+                  書籍化に向けた練習帳 1
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://note.com/leveldrain/n/n6b692688a739"
+          target="_blank"
+          class="card-container"
+        >
+          <div class="card-origin">
+            <img
+              class="card-img-top thumbnail"
+              src="./img/img_garyoku.jpg"
+              alt=""
+            >
+            <div class="card-body">
+              <div class="card-text">
+                <p>
+                  ぬけだ荘<br>
+                  書籍化に向けた練習帳 2
                 </p>
               </div>
             </div>
