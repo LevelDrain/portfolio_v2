@@ -75,6 +75,50 @@
         </a>
 
         <a
+          href="https://note.com/leveldrain/n/n371a144b4c09"
+          target="_blank"
+          class="card-container"
+        >
+          <div class="card-origin">
+            <img
+              class="card-img-top thumbnail"
+              src="./img/img_rosemary.jpg"
+              alt=""
+            >
+            <div class="card-body">
+              <div class="card-text">
+                <p>
+                  モヤモヤ抜け出し記録<br>
+                  親戚のHPを改修した話 1
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://note.com/leveldrain/n/n2b423117dd73"
+          target="_blank"
+          class="card-container"
+        >
+          <div class="card-origin">
+            <img
+              class="card-img-top thumbnail"
+              src="./img/img_rosemary.jpg"
+              alt=""
+            >
+            <div class="card-body">
+              <div class="card-text">
+                <p>
+                  モヤモヤ抜け出し記録<br>
+                  親戚のHPを改修した話 2
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
           href="https://note.com/leveldrain/n/nb0da6b60275f"
           target="_blank"
           class="card-container"
