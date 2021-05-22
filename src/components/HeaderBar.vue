@@ -2,8 +2,9 @@
   <nav class="navbar navbar-dark nav-color">
     <router-link
       class="navbar-brand ml-2"
-      to="/">
-      上島研究所
+      to="/"
+    >
+      水準研究所
     </router-link>
 
     <ul class="navbar-nav d-flex flex-row">
@@ -14,7 +15,8 @@
         src="../assets/img/img_close.svg"
         alt=""
         class="close-button"
-        @click="close">
+        @click="close"
+      >
     </ul>
   </nav>
 </template>
